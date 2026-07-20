@@ -1,24 +1,39 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "研寿｜AI 辅助的人体证据档案",
-  description:
-    "研究与长寿之间，一份由 AI 协助整理、以人体证据为核心的持续更新档案。",
-  openGraph: {
-    title: "研寿",
-    description: "AI 辅助的人体证据档案。研究方案，不兜售答案。",
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "研寿",
-    description: "AI 辅助的人体证据档案。研究方案，不兜售答案。",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const requestHeaders = await headers();
+  const host =
+    requestHeaders.get("x-forwarded-host") ??
+    requestHeaders.get("host") ??
+    "localhost:3000";
+  const protocol =
+    requestHeaders.get("x-forwarded-proto") ??
+    (host.startsWith("localhost") ? "http" : "https");
+  const origin = `${protocol}://${host}`;
+
+  return {
+    title: "研寿｜AI 辅助的人体证据档案",
+    description:
+      "研究如何活得更久，也研究什么并不成立。一份以人体证据为核心、持续更新的长寿研究档案。",
+    openGraph: {
+      title: "研寿",
+      description: "AI 辅助的人体证据档案。研究方案，不兜售答案。",
+      type: "website",
+      images: [{ url: `${origin}/og.png`, width: 1536, height: 1024 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "研寿",
+      description: "AI 辅助的人体证据档案。研究方案，不兜售答案。",
+      images: [`${origin}/og.png`],
+    },
+  };
+}
 
 export const viewport = {
-  themeColor: "#F7F7F4",
+  themeColor: "#14120F",
   colorScheme: "light",
 };
 

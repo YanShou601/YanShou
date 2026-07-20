@@ -434,6 +434,7 @@ export default function Home() {
       ? selected.papers
       : selected.papers.filter((paper) => paper.type === paperType);
   }, [selected, paperType]);
+  const showPrelude = screen === "board" && !selected;
 
   function showBoard() {
     setScreen("board");
@@ -449,7 +450,7 @@ export default function Home() {
   }
 
   return (
-    <main className="atlas-app">
+    <main className={`atlas-app${showPrelude ? " has-prelude" : ""}`}>
       <header className="atlas-header">
         <button className="atlas-brand" type="button" onClick={showBoard}>
           <span>研</span>
@@ -457,11 +458,13 @@ export default function Home() {
           <small>AI-ASSISTED HUMAN EVIDENCE ARCHIVE</small>
         </button>
         <div className="header-meta">
-          <span>研究框架 v0.3</span>
+          <span>研究框架 v0.4</span>
           <span>最后复核 2026-07-20</span>
           <span className="draft-status">持续更新</span>
         </div>
       </header>
+
+      {showPrelude && <MythicPrelude />}
 
       <div className="atlas-layout">
         <section className="atlas-content">
@@ -494,6 +497,30 @@ export default function Home() {
         />
       </div>
     </main>
+  );
+}
+
+function MythicPrelude() {
+  return (
+    <section className="mythic-prelude" aria-labelledby="prelude-title">
+      <div className="prelude-grain" aria-hidden="true" />
+      <div className="prelude-copy">
+        <p className="prelude-kicker">PROLOGUE I · THE WATERS OF DEATH</p>
+        <h1 id="prelude-title">
+          研究如何活得更久，
+          <br />
+          也研究什么并不成立。
+        </h1>
+        <p>
+          吉尔伽美什寻找生命之草，最终带回的不是永生，而是关于人的边界。
+          在这里，神话提出问题，人体证据负责回答。
+        </p>
+      </div>
+      <div className="plate-caption">
+        <span>PLATE 01</span>
+        <p>生命之草 · 蛇 · 乌鲁克</p>
+      </div>
+    </section>
   );
 }
 
@@ -719,7 +746,7 @@ function MethodView() {
     <>
       <div className="page-kicker">
         <span>METHOD / 02</span>
-        <span>VERSION 0.3</span>
+        <span>VERSION 0.4</span>
       </div>
       <div className="method-page">
         <p className="section-overline">GRADING METHOD</p>
@@ -727,6 +754,21 @@ function MethodView() {
         <p className="method-lede">
           Tier 是可被新证据推翻的编辑判断。它不表示药物剂量，也不代替个人医疗决策。
         </p>
+        <aside className="tithonus-note">
+          <span>MYTHIC CAUTION · TITHONUS</span>
+          <p>
+            <strong>永生不等于健康。</strong>
+            提托诺斯得到不死，却没有得到永恒青春。这个古老的错误提醒我们：
+            网站优先讨论健康寿命、功能和生活质量，而不是只追逐寿命数字。
+          </p>
+          <a
+            href="https://www.britishmuseum.org/collection/term/BIOG60744"
+            target="_blank"
+            rel="noreferrer"
+          >
+            神话出处 ↗
+          </a>
+        </aside>
         <div className="criteria-list">
           {criteria.map(([name, description], index) => (
             <div key={name}>
@@ -766,6 +808,18 @@ function ChangelogView() {
       <div className="changelog-page">
         <p className="section-overline">CHANGELOG</p>
         <h1>研究更新记录</h1>
+        <div className="change-entry">
+          <time>2026-07-20</time>
+          <div>
+            <h2>v0.4 · 建立神话序章与科学内页</h2>
+            <ul>
+              <li>以吉尔伽美什寻找生命之草作为研究世界观。</li>
+              <li>新增原创版画序章，但让 Tier 榜单继续进入首屏。</li>
+              <li>以提托诺斯解释“寿命不等于健康寿命”。</li>
+              <li>论文档案继续保持克制、清晰的阅读界面。</li>
+            </ul>
+          </div>
+        </div>
         <div className="change-entry">
           <time>2026-07-20</time>
           <div>
