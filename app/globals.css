@@ -146,26 +146,6 @@ a {
   color: var(--accent);
 }
 
-.natural-prelude {
-  overflow: hidden;
-  border-bottom: 1px solid var(--line-dark);
-  background-color: var(--parchment);
-}
-
-.natural-prelude img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.has-prelude .atlas-layout {
-  position: relative;
-  z-index: 5;
-  margin-top: -30px;
-  border-top: 1px solid var(--line-dark);
-  background: var(--background);
-}
-
 .atlas-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 286px;
@@ -177,10 +157,6 @@ a {
   min-width: 0;
   padding: 38px 48px 100px;
   border-right: 1px solid var(--line);
-}
-
-.has-prelude .atlas-content {
-  padding-top: 30px;
 }
 
 .page-kicker {
@@ -805,47 +781,6 @@ a {
   margin-top: 28px;
 }
 
-.nature-note {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr) auto;
-  gap: 28px;
-  align-items: start;
-  margin-top: 46px;
-  padding: 26px 0;
-  border-top: 1px solid var(--line-dark);
-  border-bottom: 1px solid var(--line-dark);
-}
-
-.nature-note > span {
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: 0.08em;
-  line-height: 1.6;
-}
-
-.nature-note p {
-  max-width: 650px;
-  margin: 0;
-  color: var(--muted);
-  font-family: var(--serif);
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-.nature-note strong {
-  color: var(--foreground);
-  font-weight: 500;
-}
-
-.nature-note a {
-  padding-bottom: 3px;
-  border-bottom: 1px solid var(--accent);
-  color: var(--accent);
-  font-size: 10px;
-  white-space: nowrap;
-}
-
 .criteria-list {
   margin-top: 46px;
   border-top: 1px solid var(--line-dark);
@@ -1020,17 +955,12 @@ a {
     padding: 28px 16px 80px;
   }
 
-  .has-prelude .atlas-layout {
-    margin-top: -22px;
-  }
-
   .board-intro,
   .tier-row,
   .verdict-block,
   .analysis-grid,
   .paper-record,
   .criteria-list > div,
-  .nature-note,
   .change-entry,
   .next-research {
     grid-template-columns: 1fr;
@@ -1113,15 +1043,11 @@ a {
   }
 
   .criteria-list > div,
-  .nature-note,
   .change-entry,
   .next-research {
     gap: 10px;
   }
 
-  .nature-note a {
-    justify-self: start;
-  }
 }
 
 @media (max-width: 480px) {

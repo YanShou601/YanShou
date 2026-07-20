@@ -434,8 +434,6 @@ export default function Home() {
       ? selected.papers
       : selected.papers.filter((paper) => paper.type === paperType);
   }, [selected, paperType]);
-  const showPrelude = screen === "board" && !selected;
-
   function showBoard() {
     setScreen("board");
     setSelectedId(null);
@@ -450,7 +448,7 @@ export default function Home() {
   }
 
   return (
-    <main className={`atlas-app${showPrelude ? " has-prelude" : ""}`}>
+    <main className="atlas-app">
       <header className="atlas-header">
         <button className="atlas-brand" type="button" onClick={showBoard}>
           <span>研</span>
@@ -458,13 +456,11 @@ export default function Home() {
           <small>AI-ASSISTED HUMAN EVIDENCE ARCHIVE</small>
         </button>
         <div className="header-meta">
-          <span>研究框架 v0.6</span>
+          <span>研究框架 v0.7</span>
           <span>最后复核 2026-07-20</span>
           <span className="draft-status">持续更新</span>
         </div>
       </header>
-
-      {showPrelude && <NaturalPrelude />}
 
       <div className="atlas-layout">
         <section className="atlas-content">
@@ -497,17 +493,6 @@ export default function Home() {
         />
       </div>
     </main>
-  );
-}
-
-function NaturalPrelude() {
-  return (
-    <section className="natural-prelude" aria-label="格陵兰鲨科学图版">
-      <img
-        src="/greenland-shark-banner.png"
-        alt="铺满画面的格陵兰鲨普鲁士蓝科学线稿"
-      />
-    </section>
   );
 }
 
@@ -733,7 +718,7 @@ function MethodView() {
     <>
       <div className="page-kicker">
         <span>METHOD / 02</span>
-        <span>VERSION 0.6</span>
+        <span>VERSION 0.7</span>
       </div>
       <div className="method-page">
         <p className="section-overline">GRADING METHOD</p>
@@ -741,21 +726,6 @@ function MethodView() {
         <p className="method-lede">
           Tier 是可被新证据推翻的编辑判断。它不表示药物剂量，也不代替个人医疗决策。
         </p>
-        <aside className="nature-note">
-          <span>NATURAL MODEL · GREENLAND SHARK</span>
-          <p>
-            <strong>自然样本不是人类处方。</strong>
-            格陵兰鲨的极端寿命与新近基因组研究可以帮助提出问题，但跨物种机制不能替代人体随机试验，
-            更不能直接变成补充剂建议。
-          </p>
-          <a
-            href="https://pubmed.ncbi.nlm.nih.gov/42154556/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            基因组研究 ↗
-          </a>
-        </aside>
         <div className="criteria-list">
           {criteria.map(([name, description], index) => (
             <div key={name}>
@@ -802,6 +772,18 @@ function ChangelogView() {
       <div className="changelog-page">
         <p className="section-overline">CHANGELOG</p>
         <h1>研究更新记录</h1>
+        <div className="change-entry">
+          <time>2026-07-20</time>
+          <div>
+            <h2>v0.7 · 回归简单高效的资料查询</h2>
+            <ul>
+              <li>移除首页鲨鱼横幅与自然寿命主题图像。</li>
+              <li>首页打开后直接进入 Tier 榜单与论文导航。</li>
+              <li>方法页删除跨物种装饰性内容，集中解释证据判级。</li>
+              <li>取消图片社交预览，让网站定位回到研究资料库。</li>
+            </ul>
+          </div>
+        </div>
         <div className="change-entry">
           <time>2026-07-20</time>
           <div>
