@@ -9,7 +9,7 @@
 | 入口 | 内容 |
 |---|---|
 | [补剂候选总目录](catalog/supplements.md) | 53 项候选、Bryan 状态、评审状态和下一步优先级 |
-| [已评审档案](dossiers/README.md) | 当前 12 个完成第一轮评审的补剂 |
+| [已评审档案](dossiers/index.md) | 当前 12 个完成第一轮评审的补剂 |
 | [NAD⁺ 代谢轴总览](topics/nad-pathway.md) | 为什么重要、真正缺乏、食物、补剂、直接口服与静脉路线 |
 | [现有论文库](papers/existing-evidence-library.md) | 当前 28 条论文记录 |
 | [D / 镁 / 纤维论文批次](papers/research-batch-2026-07-20-vitamin-d-magnesium-fiber.md) | 新增 9 条定向证据记录 |

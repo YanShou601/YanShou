@@ -1,4 +1,4 @@
-import { rmSync } from "node:fs";
+import { existsSync, rmSync } from "node:fs";
 import { resolve } from "node:path";
 import { spawnSync } from "node:child_process";
 
@@ -33,5 +33,18 @@ run(vitepressCli, ["build", "knowledge", "--outDir", docsOutput], {
   DOCS_DEPLOY: "1",
 });
 
-run(vinextCli, ["build"]);
+const requiredDirectoryIndexes = [
+  "index.html",
+  "audits/index.html",
+  "dossiers/index.html",
+  "products/index.html",
+  "topics/index.html",
+];
 
+for (const indexPath of requiredDirectoryIndexes) {
+  if (!existsSync(resolve(docsOutput, indexPath))) {
+    throw new Error(`Missing documentation directory index: ${indexPath}`);
+  }
+}
+
+run(vinextCli, ["build"]);
