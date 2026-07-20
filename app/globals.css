@@ -439,26 +439,12 @@ a {
   line-height: 1.7;
 }
 
-.rail-home,
 .rail-tier button,
 .rail-secondary button {
   width: 100%;
   background: transparent;
   cursor: pointer;
   text-align: left;
-}
-
-.rail-home {
-  display: flex;
-  gap: 10px;
-  margin-top: 12px;
-  padding: 10px 8px;
-  font-size: 12px;
-}
-
-.rail-home[aria-current="page"] {
-  background: var(--foreground);
-  color: white;
 }
 
 .rail-tier {
@@ -1005,12 +991,6 @@ a {
 
   .rail-empty {
     display: none;
-  }
-
-  .rail-home {
-    width: auto;
-    flex: 0 0 auto;
-    margin: 0;
   }
 
   .rail-secondary {

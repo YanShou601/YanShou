@@ -7,8 +7,12 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "vinext build",
+    "build": "node scripts/build-site.mjs",
+    "build:app": "vinext build",
     "start": "vinext start",
+    "docs:dev": "vitepress dev knowledge",
+    "docs:build": "vitepress build knowledge",
+    "docs:preview": "vitepress preview knowledge",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
@@ -35,6 +39,7 @@
     "typescript": "5.9.3",
     "vinext": "0.0.50",
     "vite": "8.0.13",
+    "vitepress": "^1.6.4",
     "wrangler": "4.92.0"
   },
   "type": "module"

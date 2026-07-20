@@ -1,0 +1,14 @@
+product_id,category,brand,product,market,status,quality_tier,evidence_tier,serving,epa_mg,dha_mg,form,independent_signal,last_checked,public_use
+omega3-sports-research-triple,omega3,Sports Research,Omega-3 Fish Oil Triple Strength 1250mg,US,reviewed,P1,T1,1 softgel,690,310,triglyceride,current IFOS product listing with batch report selector,2026-07-20,not-verified
+omega3-puori-o3,omega3,Puori,O3 Fish Oil Capsules,US-and-EU,reviewed,P1,T1,3 capsules,1250,500,natural-triglyceride,current IFOS product listing plus batch lookup,2026-07-20,not-verified
+omega3-carlson-elite,omega3,Carlson,Elite Omega-3 Gems,US,reviewed,P1,T1,2 softgels,800,600,ethyl-esters,current IFOS product listing,2026-07-20,not-verified
+omega3-whc-unocardio-1000,omega3,WHC,UnoCardio 1000 plus Vitamin D 1000,EU,reviewed,P1,T1,1 softgel,675,460,not-confirmed-from-primary-label,current IFOS product listing with batch report selector,2026-07-20,not-verified
+omega3-life-extension-super,omega3,Life Extension,Super Omega-3 EPA/DHA Fish Oil Sesame Lignans & Olive Extract,US,reviewed,P1,T1,2 softgels,700,500,not-clearly-disclosed,IFOS product listing,2026-07-20,not-verified
+omega3-thorne-super-epa,omega3,Thorne,Super EPA,US,reviewed,P1,T1,1 gelcap,425,270,not-clearly-disclosed,NSF ANSI 173 and Certified for Sport,2026-07-20,not-verified
+omega3-nordic-ultimate,omega3,Nordic Naturals,Ultimate Omega,US,reviewed,P2,T1,2 softgels,650,450,re-esterified-triglyceride,current lot COA locator but no physical lot audited,2026-07-20,not-verified
+omega3-pure-one,omega3,Pure Encapsulations,O.N.E. Omega,US,reviewed,P2,T1,1 softgel,600,400,triglyceride,manufacturer batch-testing statement,2026-07-20,not-verified
+omega3-now-ultra,omega3,NOW Foods,Ultra Omega-3,US,reviewed,P2,T1,1 softgel,500,250,not-clearly-disclosed,Intertek GMP plus product contaminant-testing statement,2026-07-20,not-verified
+omega3-doctors-best-clear,omega3,Doctor's Best,Purified & Clear Omega-3 Fish Oil,US,reviewed,P2,T1,2 marine softgels,800,400,ethyl-esters,official page claims IFOS but independent listing not captured,2026-07-20,not-verified
+omega3-california-gold-800,omega3,California Gold Nutrition,Omega 800 Ultra-Concentrated Omega-3 Fish Oil,US,reviewed,P2,T1,1 softgel,480,320,triglyceride,iTested batch reports incomplete for oxidation,2026-07-20,not-verified
+omega3-jarrow-balance,omega3,Jarrow Formulas,EPA-DHA Balance,US,reviewed,P3,T1,2 softgels,800,400,ethyl-esters,current label plus manufacturer process claims,2026-07-20,not-verified
+omega3-blueprint-current,omega3,Blueprint Bryan Johnson,Omega-3,US,candidate,pending,T1,2 veggie capsules,400,400,algal-oil,public COA available but not fully audited,2026-07-20,current-explicit-bryan

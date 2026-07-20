@@ -40,3 +40,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+/knowledge/.vitepress/cache/
+/knowledge/.vitepress/dist/
+/public/docs/
