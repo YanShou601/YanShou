@@ -29,6 +29,14 @@
 | 陈传多 Esquire HK 2026 采访 | https://www.esquirehk.com/en/next/he-is-bold-buff-and-60 | `work/references/chuando-tan/2026-07-21-esquire-hk-2026-interview.html` | 551654 | `9ae80c8a658de12e16374e918567349c81c09225bde3f4279179d869d8c006f0` |
 | WHO 身体活动与久坐指南页 | https://www.who.int/publications/i/item/9789240014886 | `work/references/chuando-tan/2026-07-21-who-physical-activity-guidelines.html` | 89815 | `f7b44bbcde6ea213937c044c68b306328dca2435996b0f853bad4ec04e3a65ad` |
 | 压力与端粒 2 条 PubMed 记录 | NCBI E-utilities 批量导出（PMID 22808115、26853993） | `work/references/chuando-tan/2026-07-21-stress-telomere-pubmed.xml` | 59350 | `5fb2788a5371241e4403914fd5db5906f2d83e5cdf20df45c1cda78cb012faf1` |
+| 吕良伟《明周》甲基化报告报道 | https://www.mpweekly.com/entertainment/article/70%E6%AD%B2%E5%91%82%E8%89%AF%E5%81%89%E6%9B%AC%E6%AA%A2%E6%B8%AC%E5%A0%B1%E5%91%8A-%E8%87%AA%E7%88%86%E7%9C%9F%E5%AF%A6%E5%B9%B4%E9%BD%A139%E6%AD%B2%E8%87%B3%E5%95%B1 | `work/references/ray-lui/2026-07-21-mpweekly-2025-methylation-report.html` | 115954 | `2329e6e62f1566e8472ce5e2de8da6df639fb2a746cd45117e8274f7c2d0df89` |
+| 吕良伟《星岛头条》甲基化视频报道 | https://www.stheadline.com/zh-hans/tv/tv-entertainment/3447407/ | `work/references/ray-lui/2026-07-21-singtao-2025-methylation-video.html` | 341197 | `518e311fa71c424afc17bd9531f4c69405317dc7f9eb377d2e576a12b69f5d99` |
+| 吕良伟甲基化报告画面（结果页） | 《明周》报道页面图片 | `work/references/ray-lui/2026-07-21-mpweekly-report-page.jpg` | 30466 | `38ab06564983d3d9cd3014cbfd84d7c9f65120835d609c9bea602ef8ed712a58` |
+| 吕良伟甲基化报告画面（仪表盘） | 《明周》报道页面图片 | `work/references/ray-lui/2026-07-21-mpweekly-report-summary.jpg` | 31352 | `69e307a8d790bc288a8f3b2028a44f0284027968ee17c12d2936b99861ac869a` |
+| 吕良伟爱奇艺人物页 | https://www.iq.com/actor-info/%E5%90%95%E8%89%AF%E4%BC%9F-raylui-202592105?lang=zh_cn | `work/references/ray-lui/2026-07-21-iqiyi-profile.html` | 788130 | `0eaff6899e9d0cb8b0a2deb57c082aee93eced22eafeb5525eac517d44f9abac` |
+| Nobel Prize 2016 自噬官方说明 | https://www.nobelprize.org/prizes/medicine/2016/press-release/ | `work/references/ray-lui/2026-07-21-nobel-autophagy-press-release.html` | 176661 | `24caa76a871ccfd4890a645d403e0741c105f8fd044483cddcfd8b527559c91b` |
+| 限时进食、自噬与老年蛋白 4 条 PubMed 记录 | NCBI E-utilities 批量导出（PMID 40345145、38357669、34475325、38830547） | `work/references/ray-lui/2026-07-21-fasting-protein-pubmed.xml` | 90900 | `2bfacbe5916afa195cd8de1f12a2b7c89ba4cb4b6646f0aa98ef4ae2cc1e3f06` |
+| 甲基化时钟个人应用局限全文 | NCBI PMC `PMC12714307` / PMID `41403206` | `work/references/ray-lui/2026-07-21-epigenetic-clock-limits.xml` | 213882 | `210a568cb4f1116ee8083dcfab06dd09190ef15c0a51551c9c0c2e56d0b10ae1` |
 
 Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时间 `2026-07-19T01:20:09Z`。
 
@@ -61,6 +69,7 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 | FDA 特定可溶性纤维健康声称 | https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/authorized-health-claims-meet-significant-scientific-agreement-ssa-standard | 车前子及燕麦/大麦 β-葡聚糖的适用范围 |
 | AHA 膳食胆固醇科学建议 | https://professional.heart.org/en/science-news/dietary-cholesterol-and-cardiovascular-risk/top-things-to-know | 鸡蛋、总体膳食模式、血脂异常与高风险人群边界 |
 | 陈传多 2017 早餐采访转述 | https://lifestyle.inquirer.net/272224/51-year-old-model-photographer-chuando-tan-bares-secrets-youthful-look | 6 个水波蛋、只留 2 个蛋黄的早期版本；自动下载被拒绝 |
+| 吕良伟 2026 年“四层养生法”报道 | https://www.orientaldaily.com.my/news/entertainment/2026/05/28/821733 | 本人近期视频的媒体转述；自动下载返回 520 |
 
 ## 版权与使用
 

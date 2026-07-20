@@ -69,6 +69,7 @@ export default defineConfig({
         items: [
           { text: "案例索引", link: "/cases/" },
           { text: "陈传多", link: "/cases/chuando-tan" },
+          { text: "吕良伟", link: "/cases/ray-lui" },
           { text: "Bryan 当前方案", link: "/sources/bryan-johnson-current-protocol" },
         ],
       },
@@ -130,6 +131,10 @@ export default defineConfig({
             text: "陈传多案例来源",
             link: "/sources/chuando-tan-sources-2026-07-21",
           },
+          {
+            text: "吕良伟案例来源",
+            link: "/sources/ray-lui-sources-2026-07-21",
+          },
         ],
       },
       {
@@ -185,6 +190,10 @@ export default defineConfig({
           {
             text: "前沿候选第二阶段",
             link: "/research-log/2026-07-20-frontier-longevity-phase-2",
+          },
+          {
+            text: "吕良伟案例核查",
+            link: "/research-log/2026-07-21-ray-lui-case",
           },
         ],
       },
