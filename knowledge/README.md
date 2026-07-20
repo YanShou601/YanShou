@@ -14,6 +14,7 @@
 - `catalog/products.csv`：具体产品、市场版本、活性含量与产品质量状态。
 - `catalog/supplements.md`：候选库的人类可读说明。
 - `dossiers/`：已经完成初步证据评审的干预档案。
+- `cases/`：人物公开方案、版本冲突与逐条事实核查。
 - `products/`：具体品牌与 SKU 的质量、认证、公开使用和版本档案。
 - `papers/existing-evidence-library.md`：当前网页使用的论文记录。
 - `sources/`：Bryan Johnson 等人物方案及来源清单。
@@ -79,4 +80,4 @@ rg -n "利益冲突|局限" knowledge/dossiers knowledge/papers
 5. “某人正在使用”不能作为疗效证据。
 6. 网页内容必须由知识库生成或同步，不应形成另一套独立事实。
 
-最后更新：2026-07-20
+最后更新：2026-07-21

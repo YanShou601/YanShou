@@ -36,6 +36,7 @@ run(vitepressCli, ["build", "knowledge", "--outDir", docsOutput], {
 const requiredDirectoryIndexes = [
   "index.html",
   "audits/index.html",
+  "cases/index.html",
   "dossiers/index.html",
   "products/index.html",
   "topics/index.html",

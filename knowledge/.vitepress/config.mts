@@ -16,6 +16,7 @@ export default defineConfig({
       { text: "补剂目录", link: "/catalog/supplements" },
       { text: "已评审档案", link: "/dossiers/" },
       { text: "主题地图", link: "/topics/" },
+      { text: "人物案例", link: "/cases/" },
       { text: "产品质量", link: "/products/" },
       { text: "论文库", link: "/papers/existing-evidence-library" },
       { text: "研究方法", link: "/methods/evidence-grading" },
@@ -60,6 +61,15 @@ export default defineConfig({
         items: [
           { text: "主题索引", link: "/topics/" },
           { text: "NAD⁺ 代谢轴", link: "/topics/nad-pathway" },
+        ],
+      },
+      {
+        text: "人物案例",
+        collapsed: false,
+        items: [
+          { text: "案例索引", link: "/cases/" },
+          { text: "陈传多", link: "/cases/chuando-tan" },
+          { text: "Bryan 当前方案", link: "/sources/bryan-johnson-current-protocol" },
         ],
       },
       {
@@ -115,6 +125,10 @@ export default defineConfig({
           {
             text: "NAD⁺ 主题来源批次",
             link: "/sources/nad-pathway-sources-2026-07-20",
+          },
+          {
+            text: "陈传多案例来源",
+            link: "/sources/chuando-tan-sources-2026-07-21",
           },
         ],
       },
@@ -181,6 +195,7 @@ export default defineConfig({
           { text: "干预档案模板", link: "/templates/intervention-dossier" },
           { text: "论文记录模板", link: "/templates/paper-record" },
           { text: "档案审计模板", link: "/templates/intervention-audit" },
+          { text: "人物案例模板", link: "/templates/case-dossier" },
         ],
       },
     ],

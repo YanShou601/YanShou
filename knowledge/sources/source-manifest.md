@@ -1,6 +1,6 @@
 # 来源与本地快照清单
 
-抓取日期：`2026-07-20`  
+最后更新：`2026-07-21`
 时区：`Asia/Shanghai`
 
 ## 已归档
@@ -24,6 +24,11 @@
 | Ca-AKG 30 人试验注册 | https://clinicaltrials.gov/study/NCT07114536 | `work/references/clinicaltrials/2026-07-20-NCT07114536.json` | 18473 | `d22a426cd0f244b7d5351974ff4ba301ef5c4d6c504ddeaae9ce8bec5d02851d` |
 | Bryan Johnson Wikipedia HTML | https://en.wikipedia.org/wiki/Bryan_Johnson | `work/references/wikipedia/Bryan_Johnson.wikipedia.html` | 218880 | `81f812afef28c1876b8477d6dbb8325c41e662496412636714a3cf3843b69361` |
 | Bryan Johnson Wikipedia XML | https://en.wikipedia.org/wiki/Special:Export/Bryan_Johnson | `work/references/wikipedia/Bryan_Johnson.wikipedia.xml` | 39310 | `3bdfb79dadd1e557d349fc27b6096aadc255b48010b6504726a5a8c9135d19af` |
+| 陈传多 CNA 2023 采访 | https://cnalifestyle.channelnewsasia.com/entertainment/chuando-tan-singapore-photographer-fashion-model-age-56-344986 | `work/references/chuando-tan/2026-07-21-cna-2023-interview.html` | 356622 | `894387cafa27eee5665216596e5c679cabdc2f0860fe32137441f71cdbf5290a` |
+| 陈传多《海峡时报》2026 采访 | https://www.straitstimes.com/life/entertainment/riding-into-60-celeb-photographer-chuando-tan-on-his-viral-vitality-and-staying-young | `work/references/chuando-tan/2026-07-21-straits-times-2026-interview.html` | 142705 | `10f8caa98f01758ff02fb0178afe1dfa1bd9de04ae0bfcd7a290830b05b809c3` |
+| 陈传多 Esquire HK 2026 采访 | https://www.esquirehk.com/en/next/he-is-bold-buff-and-60 | `work/references/chuando-tan/2026-07-21-esquire-hk-2026-interview.html` | 551654 | `9ae80c8a658de12e16374e918567349c81c09225bde3f4279179d869d8c006f0` |
+| WHO 身体活动与久坐指南页 | https://www.who.int/publications/i/item/9789240014886 | `work/references/chuando-tan/2026-07-21-who-physical-activity-guidelines.html` | 89815 | `f7b44bbcde6ea213937c044c68b306328dca2435996b0f853bad4ec04e3a65ad` |
+| 压力与端粒 2 条 PubMed 记录 | NCBI E-utilities 批量导出（PMID 22808115、26853993） | `work/references/chuando-tan/2026-07-21-stress-telomere-pubmed.xml` | 59350 | `5fb2788a5371241e4403914fd5db5906f2d83e5cdf20df45c1cda78cb012faf1` |
 
 Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时间 `2026-07-19T01:20:09Z`。
 
@@ -54,6 +59,8 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 | 运动补充剂 | https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/ | 肌酸运动表现与安全概览 |
 | Niacin / 维生素 B3 | https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/ | NAD⁺ 合成、推荐摄入、食物、糙皮病与高剂量风险 |
 | FDA 特定可溶性纤维健康声称 | https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/authorized-health-claims-meet-significant-scientific-agreement-ssa-standard | 车前子及燕麦/大麦 β-葡聚糖的适用范围 |
+| AHA 膳食胆固醇科学建议 | https://professional.heart.org/en/science-news/dietary-cholesterol-and-cardiovascular-risk/top-things-to-know | 鸡蛋、总体膳食模式、血脂异常与高风险人群边界 |
+| 陈传多 2017 早餐采访转述 | https://lifestyle.inquirer.net/272224/51-year-old-model-photographer-chuando-tan-bares-secrets-youthful-look | 6 个水波蛋、只留 2 个蛋黄的早期版本；自动下载被拒绝 |
 
 ## 版权与使用
 

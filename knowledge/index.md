@@ -11,6 +11,8 @@
 | [补剂候选总目录](catalog/supplements.md) | 53 项候选、Bryan 状态、评审状态和下一步优先级 |
 | [已评审档案](dossiers/index.md) | 当前 12 个完成第一轮评审的补剂 |
 | [NAD⁺ 代谢轴总览](topics/nad-pathway.md) | 为什么重要、真正缺乏、食物、补剂、直接口服与静脉路线 |
+| [人物案例](cases/index.md) | Bryan Johnson、陈传多等公开方案的事实核查与科学边界 |
+| [陈传多案例](cases/chuando-tan.md) | 鸡蛋、训练、补剂、空腹和心态说法的逐条核查 |
 | [现有论文库](papers/existing-evidence-library.md) | 当前 28 条论文记录 |
 | [D / 镁 / 纤维论文批次](papers/research-batch-2026-07-20-vitamin-d-magnesium-fiber.md) | 新增 9 条定向证据记录 |
 | [Bryan 当前方案](sources/bryan-johnson-current-protocol.md) | 当前使用、复方、产品和历史讨论的边界 |
@@ -27,6 +29,7 @@
 - 已评审补剂：12 项；
 - 待评审候选：41 项；
 - 已登记论文记录：28 条；
+- 已建立人物案例：2 个入口，其中陈传多完成第一轮逐条核查；
 - 下一批：烟酸、烟酰胺、直接口服/静脉 NAD⁺，以及牛磺酸、NAC；
 - 网页定位：只做 Markdown 文档浏览和全文检索。
 - 质量流程：已接入 `创建 → 独立审计 → 修正 → 再审计`，四项前沿候选已有独立审计。
