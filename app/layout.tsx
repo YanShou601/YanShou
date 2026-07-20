@@ -21,13 +21,19 @@ export async function generateMetadata(): Promise<Metadata> {
       title: "研寿",
       description: "AI 辅助的人体证据档案。研究方案，不兜售答案。",
       type: "website",
-      images: [{ url: `${origin}/og.png`, width: 1536, height: 1024 }],
+      images: [
+        {
+          url: `${origin}/greenland-shark-fullbleed.png`,
+          width: 1774,
+          height: 887,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: "研寿",
       description: "AI 辅助的人体证据档案。研究方案，不兜售答案。",
-      images: [`${origin}/og.png`],
+      images: [`${origin}/greenland-shark-fullbleed.png`],
     },
   };
 }

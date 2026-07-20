@@ -147,112 +147,15 @@ a {
 }
 
 .natural-prelude {
-  position: relative;
-  min-height: 292px;
   overflow: hidden;
   border-bottom: 1px solid var(--line-dark);
   background-color: var(--parchment);
-  color: var(--prussian);
 }
 
-.natural-prelude::before {
-  position: absolute;
-  inset: 0;
-  background-image: url("/greenland-shark-plate.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  content: "";
-  pointer-events: none;
-}
-
-.natural-prelude::after {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(243, 238, 220, 1) 0%,
-      rgba(243, 238, 220, 1) 58%,
-      rgba(243, 238, 220, 0.96) 68%,
-      rgba(243, 238, 220, 0.18) 82%,
-      transparent 92%
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent 0,
-      transparent 119px,
-      rgba(27, 102, 139, 0.035) 119px,
-      rgba(27, 102, 139, 0.035) 120px
-    );
-  content: "";
-  pointer-events: none;
-}
-
-.prelude-copy {
-  position: relative;
-  z-index: 2;
-  width: min(1440px, 100%);
-  margin: 0 auto;
-  padding: 44px 360px 64px 48px;
-}
-
-.prelude-kicker {
-  margin: 0 0 18px;
-  color: var(--faded-blue);
-  font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: 0.16em;
-}
-
-.prelude-copy h1 {
-  max-width: 660px;
-  margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(32px, 3.6vw, 52px);
-  font-weight: 500;
-  letter-spacing: -0.045em;
-  line-height: 1.16;
-}
-
-.prelude-summary {
-  max-width: 570px;
-  margin: 20px 0 0;
-  color: var(--muted);
-  font-family: var(--serif);
-  font-size: 13px;
-  line-height: 1.75;
-}
-
-.prelude-source {
-  position: relative;
-  z-index: 3;
-  display: inline-block;
-  margin-top: 13px;
-  padding-bottom: 2px;
-  border-bottom: 1px solid var(--faded-blue);
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: 9px;
-}
-
-.plate-caption {
-  position: absolute;
-  z-index: 3;
-  right: max(24px, calc((100vw - 1440px) / 2 + 24px));
-  bottom: 48px;
-  display: flex;
-  gap: 15px;
-  align-items: baseline;
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: 8px;
-  letter-spacing: 0.1em;
-}
-
-.plate-caption p {
-  margin: 0;
-  color: var(--faded-blue);
+.natural-prelude img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .has-prelude .atlas-layout {
@@ -1054,15 +957,6 @@ a {
 }
 
 @media (max-width: 1040px) {
-  .prelude-copy {
-    padding-right: 28px;
-    padding-left: 28px;
-  }
-
-  .plate-caption {
-    right: 28px;
-  }
-
   .atlas-layout {
     grid-template-columns: 1fr;
   }
@@ -1124,54 +1018,6 @@ a {
 
   .atlas-content {
     padding: 28px 16px 80px;
-  }
-
-  .natural-prelude {
-    min-height: 328px;
-  }
-
-  .natural-prelude::before {
-    top: 138px;
-    height: 190px;
-    opacity: 0.46;
-    background-size: auto 100%;
-  }
-
-  .natural-prelude::after {
-    background:
-      linear-gradient(
-        90deg,
-        rgba(243, 238, 220, 1) 0%,
-        rgba(243, 238, 220, 0.98) 45%,
-        rgba(243, 238, 220, 0.68) 76%,
-        rgba(243, 238, 220, 0.2) 100%
-      ),
-      repeating-linear-gradient(
-        90deg,
-        transparent 0,
-        transparent 79px,
-        rgba(27, 102, 139, 0.03) 79px,
-        rgba(27, 102, 139, 0.03) 80px
-      );
-  }
-
-  .prelude-copy {
-    padding: 34px 16px 76px;
-  }
-
-  .prelude-copy h1 {
-    max-width: 520px;
-    font-size: clamp(30px, 9vw, 42px);
-  }
-
-  .prelude-summary {
-    max-width: 480px;
-    font-size: 12px;
-  }
-
-  .plate-caption {
-    right: 16px;
-    bottom: 42px;
   }
 
   .has-prelude .atlas-layout {
@@ -1289,18 +1135,6 @@ a {
 
   .atlas-brand > span {
     grid-row: 1;
-  }
-
-  .natural-prelude {
-    min-height: 350px;
-  }
-
-  .prelude-copy h1 {
-    font-size: 30px;
-  }
-
-  .plate-caption p {
-    display: none;
   }
 
   .tier-items {

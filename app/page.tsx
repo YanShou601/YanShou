@@ -458,7 +458,7 @@ export default function Home() {
           <small>AI-ASSISTED HUMAN EVIDENCE ARCHIVE</small>
         </button>
         <div className="header-meta">
-          <span>研究框架 v0.5</span>
+          <span>研究框架 v0.6</span>
           <span>最后复核 2026-07-20</span>
           <span className="draft-status">持续更新</span>
         </div>
@@ -502,30 +502,11 @@ export default function Home() {
 
 function NaturalPrelude() {
   return (
-    <section className="natural-prelude" aria-labelledby="prelude-title">
-      <div className="prelude-copy">
-        <p className="prelude-kicker">NATURAL LONGEVITY · SPECIMEN 01</p>
-        <h1 id="prelude-title">
-          向活了几个世纪的
-          <br />生命提问。
-        </h1>
-        <p className="prelude-summary">
-          2016 年研究通过眼晶状体放射性碳测年，在 28 条雌性格陵兰鲨中，
-          推算最大个体为 392 ± 120 岁。它提供研究线索，不提供人类延寿答案。
-        </p>
-        <a
-          className="prelude-source"
-          href="https://pubmed.ncbi.nlm.nih.gov/27516602/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Science 2016 · 查看研究 ↗
-        </a>
-      </div>
-      <div className="plate-caption">
-        <span>PLATE 01</span>
-        <p>Somniosus microcephalus · Greenland shark</p>
-      </div>
+    <section className="natural-prelude" aria-label="格陵兰鲨科学图版">
+      <img
+        src="/greenland-shark-banner.png"
+        alt="铺满画面的格陵兰鲨普鲁士蓝科学线稿"
+      />
     </section>
   );
 }
@@ -752,7 +733,7 @@ function MethodView() {
     <>
       <div className="page-kicker">
         <span>METHOD / 02</span>
-        <span>VERSION 0.5</span>
+        <span>VERSION 0.6</span>
       </div>
       <div className="method-page">
         <p className="section-overline">GRADING METHOD</p>
@@ -797,6 +778,13 @@ function MethodView() {
             <a href="https://bryanjohnson.komi.io/" target="_blank" rel="noreferrer">
               Bryan Johnson 资料入口 ↗
             </a>
+            <a
+              href="https://en.wikipedia.org/wiki/Bryan_Johnson"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Bryan Johnson Wikipedia ↗
+            </a>
           </div>
         </section>
       </div>
@@ -814,6 +802,18 @@ function ChangelogView() {
       <div className="changelog-page">
         <p className="section-overline">CHANGELOG</p>
         <h1>研究更新记录</h1>
+        <div className="change-entry">
+          <time>2026-07-20</time>
+          <div>
+            <h2>v0.6 · 无字满幅格陵兰鲨图版</h2>
+            <ul>
+              <li>删除鲨鱼图中的标题、标注与文字装饰。</li>
+              <li>取消左侧文案留白，让鲨鱼居中并接近横幅全宽。</li>
+              <li>保留羊皮纸与普鲁士蓝线稿，作为纯视觉研究序章。</li>
+              <li>归档 Bryan Johnson Wikipedia 页面及精确版本信息，作为背景参考而非科学证据。</li>
+            </ul>
+          </div>
+        </div>
         <div className="change-entry">
           <time>2026-07-20</time>
           <div>
