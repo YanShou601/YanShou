@@ -376,6 +376,69 @@ a {
   font-size: 8px;
 }
 
+.rail-category-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  margin-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.rail-category-tabs button {
+  padding: 8px 2px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.rail-category-tabs button:hover {
+  border-color: var(--line-dark);
+  color: var(--foreground);
+}
+
+.rail-category-tabs button[aria-selected="true"] {
+  border-color: var(--foreground);
+  background: var(--foreground);
+  color: white;
+}
+
+.rail-library-panel {
+  min-height: 382px;
+}
+
+.rail-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 230px;
+  padding: 42px 8px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.rail-empty span {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+
+.rail-empty strong {
+  margin-top: 14px;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rail-empty p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
 .rail-home,
 .rail-tier button,
 .rail-secondary button {
@@ -918,6 +981,29 @@ a {
   .rail-heading,
   .research-rail nav,
   .rail-disclaimer {
+    display: none;
+  }
+
+  .rail-category-tabs {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .rail-category-tabs button {
+    padding: 8px 9px;
+    white-space: nowrap;
+  }
+
+  .rail-library-panel {
+    display: contents;
+    min-height: 0;
+  }
+
+  .rail-empty {
     display: none;
   }
 

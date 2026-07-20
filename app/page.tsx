@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 
 type PaperType = "Meta-analysis" | "RCT" | "Systematic review";
 type Screen = "board" | "method" | "changelog";
+type LibraryTab = "supplements" | "diet" | "exercise" | "cases";
 
 type Paper = {
   id: string;
@@ -422,6 +423,13 @@ const paperTypes: Array<"All" | PaperType> = [
   "Systematic review",
 ];
 
+const libraryTabs: Array<{ id: LibraryTab; label: string; note: string }> = [
+  { id: "supplements", label: "补剂", note: "SUPPLEMENTS" },
+  { id: "diet", label: "饮食", note: "DIET" },
+  { id: "exercise", label: "运动", note: "EXERCISE" },
+  { id: "cases", label: "案例", note: "CASES" },
+];
+
 export default function Home() {
   const [screen, setScreen] = useState<Screen>("board");
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -456,7 +464,7 @@ export default function Home() {
           <small>AI-ASSISTED HUMAN EVIDENCE ARCHIVE</small>
         </button>
         <div className="header-meta">
-          <span>研究框架 v0.7</span>
+          <span>研究框架 v0.8</span>
           <span>最后复核 2026-07-20</span>
           <span className="draft-status">持续更新</span>
         </div>
@@ -718,7 +726,7 @@ function MethodView() {
     <>
       <div className="page-kicker">
         <span>METHOD / 02</span>
-        <span>VERSION 0.7</span>
+        <span>VERSION 0.8</span>
       </div>
       <div className="method-page">
         <p className="section-overline">GRADING METHOD</p>
@@ -772,6 +780,18 @@ function ChangelogView() {
       <div className="changelog-page">
         <p className="section-overline">CHANGELOG</p>
         <h1>研究更新记录</h1>
+        <div className="change-entry">
+          <time>2026-07-20</time>
+          <div>
+            <h2>v0.8 · 建立四类研究导航</h2>
+            <ul>
+              <li>右侧导航新增“补剂、饮食、运动、案例”四个标签。</li>
+              <li>补剂标签保留当前 Tier 与论文档案目录。</li>
+              <li>饮食、运动和案例暂设为空白栏目，等待后续建档。</li>
+              <li>标签切换只改变导航内容，不干扰正在阅读的论文页面。</li>
+            </ul>
+          </div>
+        </div>
         <div className="change-entry">
           <time>2026-07-20</time>
           <div>
@@ -865,45 +885,82 @@ function ResearchRail({
   onSelect: (id: string) => void;
   onScreen: (screen: Screen) => void;
 }) {
+  const [libraryTab, setLibraryTab] = useState<LibraryTab>("supplements");
+  const activeLibrary = libraryTabs.find((tab) => tab.id === libraryTab)!;
+
   return (
     <aside className="research-rail" aria-label="研究导航">
       <div className="rail-heading">
         <span>研究导航</span>
         <small>RESEARCH INDEX</small>
       </div>
-      <button
-        type="button"
-        className="rail-home"
-        aria-current={screen === "board" && !selectedId ? "page" : undefined}
-        onClick={onBoard}
-      >
-        <span>⌂</span>
-        Tier 总览
-      </button>
 
-      <nav>
-        {tierInfo.map((tier) => (
-          <div className="rail-tier" key={tier.tier}>
-            <div>
-              <strong>{tier.tier}</strong>
-              <span>{tier.label.split(" / ")[0]}</span>
-            </div>
-            {dossiers
-              .filter((item) => item.tier === tier.tier)
-              .map((item) => (
-                <button
-                  type="button"
-                  key={item.id}
-                  aria-current={selectedId === item.id ? "page" : undefined}
-                  onClick={() => onSelect(item.id)}
-                >
-                  <span>{item.name}</span>
-                  <small>{item.papers.length}</small>
-                </button>
-              ))}
-          </div>
+      <div className="rail-category-tabs" role="tablist" aria-label="研究分类">
+        {libraryTabs.map((tab) => (
+          <button
+            type="button"
+            role="tab"
+            id={`rail-tab-${tab.id}`}
+            key={tab.id}
+            aria-selected={libraryTab === tab.id}
+            aria-controls="rail-library-panel"
+            onClick={() => setLibraryTab(tab.id)}
+          >
+            {tab.label}
+          </button>
         ))}
-      </nav>
+      </div>
+
+      <div
+        className="rail-library-panel"
+        id="rail-library-panel"
+        role="tabpanel"
+        aria-labelledby={`rail-tab-${libraryTab}`}
+      >
+        {libraryTab === "supplements" ? (
+          <>
+            <button
+              type="button"
+              className="rail-home"
+              aria-current={screen === "board" && !selectedId ? "page" : undefined}
+              onClick={onBoard}
+            >
+              <span>⌂</span>
+              Tier 总览
+            </button>
+
+            <nav>
+              {tierInfo.map((tier) => (
+                <div className="rail-tier" key={tier.tier}>
+                  <div>
+                    <strong>{tier.tier}</strong>
+                    <span>{tier.label.split(" / ")[0]}</span>
+                  </div>
+                  {dossiers
+                    .filter((item) => item.tier === tier.tier)
+                    .map((item) => (
+                      <button
+                        type="button"
+                        key={item.id}
+                        aria-current={selectedId === item.id ? "page" : undefined}
+                        onClick={() => onSelect(item.id)}
+                      >
+                        <span>{item.name}</span>
+                        <small>{item.papers.length}</small>
+                      </button>
+                    ))}
+                </div>
+              ))}
+            </nav>
+          </>
+        ) : (
+          <div className="rail-empty">
+            <span>{activeLibrary.note}</span>
+            <strong>{activeLibrary.label}资料库</strong>
+            <p>栏目框架已建立，内容将在后续研究中逐步加入。</p>
+          </div>
+        )}
+      </div>
 
       <div className="rail-secondary">
         <button
