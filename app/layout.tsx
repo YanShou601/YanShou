@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "延寿证据图谱｜Longevity Evidence Atlas",
+  title: "研寿｜AI 辅助的人体证据档案",
   description:
-    "按 Tier 查看肌酸、DHA/EPA、Q10、NMN、亚精胺等补充剂的人体研究、主要结果与局限。",
+    "研究与长寿之间，一份由 AI 协助整理、以人体证据为核心的持续更新档案。",
   openGraph: {
-    title: "延寿证据图谱",
-    description: "一个持续更新的补充剂论文索引与证据分层框架。",
+    title: "研寿",
+    description: "AI 辅助的人体证据档案。研究方案，不兜售答案。",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "延寿证据图谱",
-    description: "一个持续更新的补充剂论文索引与证据分层框架。",
+    title: "研寿",
+    description: "AI 辅助的人体证据档案。研究方案，不兜售答案。",
   },
 };
 

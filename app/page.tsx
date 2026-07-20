@@ -452,12 +452,12 @@ export default function Home() {
     <main className="atlas-app">
       <header className="atlas-header">
         <button className="atlas-brand" type="button" onClick={showBoard}>
-          <span>LEA</span>
-          <strong>延寿证据图谱</strong>
-          <small>LONGEVITY EVIDENCE ATLAS</small>
+          <span>研</span>
+          <strong>研寿</strong>
+          <small>AI-ASSISTED HUMAN EVIDENCE ARCHIVE</small>
         </button>
         <div className="header-meta">
-          <span>研究框架 v0.2</span>
+          <span>研究框架 v0.3</span>
           <span>最后复核 2026-07-20</span>
           <span className="draft-status">持续更新</span>
         </div>
@@ -719,7 +719,7 @@ function MethodView() {
     <>
       <div className="page-kicker">
         <span>METHOD / 02</span>
-        <span>VERSION 0.2</span>
+        <span>VERSION 0.3</span>
       </div>
       <div className="method-page">
         <p className="section-overline">GRADING METHOD</p>
@@ -766,6 +766,17 @@ function ChangelogView() {
       <div className="changelog-page">
         <p className="section-overline">CHANGELOG</p>
         <h1>研究更新记录</h1>
+        <div className="change-entry">
+          <time>2026-07-20</time>
+          <div>
+            <h2>v0.3 · 更名为「研寿」</h2>
+            <ul>
+              <li>品牌名从功能描述收束为一份长期研究刊物的名字。</li>
+              <li>AI 只作为资料整理方法，不作为证据来源或结论背书。</li>
+              <li>副标题调整为“AI 辅助的人体证据档案”。</li>
+            </ul>
+          </div>
+        </div>
         <div className="change-entry">
           <time>2026-07-20</time>
           <div>
