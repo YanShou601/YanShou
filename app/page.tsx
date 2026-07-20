@@ -458,13 +458,13 @@ export default function Home() {
           <small>AI-ASSISTED HUMAN EVIDENCE ARCHIVE</small>
         </button>
         <div className="header-meta">
-          <span>研究框架 v0.4</span>
+          <span>研究框架 v0.5</span>
           <span>最后复核 2026-07-20</span>
           <span className="draft-status">持续更新</span>
         </div>
       </header>
 
-      {showPrelude && <MythicPrelude />}
+      {showPrelude && <NaturalPrelude />}
 
       <div className="atlas-layout">
         <section className="atlas-content">
@@ -500,25 +500,31 @@ export default function Home() {
   );
 }
 
-function MythicPrelude() {
+function NaturalPrelude() {
   return (
-    <section className="mythic-prelude" aria-labelledby="prelude-title">
-      <div className="prelude-grain" aria-hidden="true" />
+    <section className="natural-prelude" aria-labelledby="prelude-title">
       <div className="prelude-copy">
-        <p className="prelude-kicker">PROLOGUE I · THE WATERS OF DEATH</p>
+        <p className="prelude-kicker">NATURAL LONGEVITY · SPECIMEN 01</p>
         <h1 id="prelude-title">
-          研究如何活得更久，
-          <br />
-          也研究什么并不成立。
+          向活了几个世纪的
+          <br />生命提问。
         </h1>
-        <p>
-          吉尔伽美什寻找生命之草，最终带回的不是永生，而是关于人的边界。
-          在这里，神话提出问题，人体证据负责回答。
+        <p className="prelude-summary">
+          2016 年研究通过眼晶状体放射性碳测年，在 28 条雌性格陵兰鲨中，
+          推算最大个体为 392 ± 120 岁。它提供研究线索，不提供人类延寿答案。
         </p>
+        <a
+          className="prelude-source"
+          href="https://pubmed.ncbi.nlm.nih.gov/27516602/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Science 2016 · 查看研究 ↗
+        </a>
       </div>
       <div className="plate-caption">
         <span>PLATE 01</span>
-        <p>生命之草 · 蛇 · 乌鲁克</p>
+        <p>Somniosus microcephalus · Greenland shark</p>
       </div>
     </section>
   );
@@ -746,7 +752,7 @@ function MethodView() {
     <>
       <div className="page-kicker">
         <span>METHOD / 02</span>
-        <span>VERSION 0.4</span>
+        <span>VERSION 0.5</span>
       </div>
       <div className="method-page">
         <p className="section-overline">GRADING METHOD</p>
@@ -754,19 +760,19 @@ function MethodView() {
         <p className="method-lede">
           Tier 是可被新证据推翻的编辑判断。它不表示药物剂量，也不代替个人医疗决策。
         </p>
-        <aside className="tithonus-note">
-          <span>MYTHIC CAUTION · TITHONUS</span>
+        <aside className="nature-note">
+          <span>NATURAL MODEL · GREENLAND SHARK</span>
           <p>
-            <strong>永生不等于健康。</strong>
-            提托诺斯得到不死，却没有得到永恒青春。这个古老的错误提醒我们：
-            网站优先讨论健康寿命、功能和生活质量，而不是只追逐寿命数字。
+            <strong>自然样本不是人类处方。</strong>
+            格陵兰鲨的极端寿命与新近基因组研究可以帮助提出问题，但跨物种机制不能替代人体随机试验，
+            更不能直接变成补充剂建议。
           </p>
           <a
-            href="https://www.britishmuseum.org/collection/term/BIOG60744"
+            href="https://pubmed.ncbi.nlm.nih.gov/42154556/"
             target="_blank"
             rel="noreferrer"
           >
-            神话出处 ↗
+            基因组研究 ↗
           </a>
         </aside>
         <div className="criteria-list">
@@ -808,6 +814,18 @@ function ChangelogView() {
       <div className="changelog-page">
         <p className="section-overline">CHANGELOG</p>
         <h1>研究更新记录</h1>
+        <div className="change-entry">
+          <time>2026-07-20</time>
+          <div>
+            <h2>v0.5 · 转向格陵兰鲨与蓝色科学线稿</h2>
+            <ul>
+              <li>撤下复杂的黑色神话背景。</li>
+              <li>以格陵兰鲨作为极端自然寿命的研究象征。</li>
+              <li>全站改为羊皮纸、普鲁士蓝线条与淡海蓝标注。</li>
+              <li>明确自然模型不能直接外推为人类延寿方案。</li>
+            </ul>
+          </div>
+        </div>
         <div className="change-entry">
           <time>2026-07-20</time>
           <div>

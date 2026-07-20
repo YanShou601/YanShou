@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "研寿｜AI 辅助的人体证据档案",
     description:
-      "研究如何活得更久，也研究什么并不成立。一份以人体证据为核心、持续更新的长寿研究档案。",
+      "向自然界的长寿样本提问，用人体证据回答。一份持续更新的长寿研究档案。",
     openGraph: {
       title: "研寿",
       description: "AI 辅助的人体证据档案。研究方案，不兜售答案。",
@@ -33,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export const viewport = {
-  themeColor: "#14120F",
+  themeColor: "#F3EEDC",
   colorScheme: "light",
 };
 

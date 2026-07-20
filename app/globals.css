@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f2efe7;
-  --foreground: #171611;
-  --surface: #f9f7f0;
-  --muted-surface: #e9e5da;
-  --muted: #68665e;
-  --line: #d4cfc1;
-  --line-dark: #aaa496;
-  --accent: #9d4937;
-  --accent-soft: #efe0da;
-  --night: #14120f;
-  --bone: #e8dfcc;
-  --copper: #6f7769;
-  --t1: #275d43;
-  --t1-soft: #e3eee8;
-  --t2: #5f6840;
-  --t2-soft: #ecefdf;
-  --t3: #87641d;
-  --t3-soft: #f3ecd9;
-  --t4: #7a4c45;
-  --t4-soft: #f1e5e2;
+  --background: #f3eedc;
+  --foreground: #173957;
+  --surface: #faf6e9;
+  --muted-surface: #e7edf0;
+  --muted: #677b88;
+  --line: #c7d3d7;
+  --line-dark: #8fa9b5;
+  --accent: #1b668b;
+  --accent-soft: #dcebf0;
+  --parchment: #f3eedc;
+  --prussian: #173f67;
+  --faded-blue: #6f98ae;
+  --t1: #0c647b;
+  --t1-soft: #dcecef;
+  --t2: #3c768e;
+  --t2-soft: #e1ecef;
+  --t3: #617b8a;
+  --t3-soft: #e7edef;
+  --t4: #747d85;
+  --t4-soft: #eceff0;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --sans: Inter, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Arial,
     sans-serif;
@@ -38,7 +38,15 @@ html {
 
 body {
   margin: 0;
-  background: var(--background);
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 31px,
+      rgba(27, 102, 139, 0.025) 31px,
+      rgba(27, 102, 139, 0.025) 32px
+    ),
+    var(--background);
   color: var(--foreground);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
@@ -76,9 +84,9 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 0 32px;
-  border-bottom: 1px solid rgba(232, 223, 204, 0.2);
-  background: rgba(20, 18, 15, 0.96);
-  color: var(--bone);
+  border-bottom: 1px solid var(--line-dark);
+  background: rgba(243, 238, 220, 0.96);
+  color: var(--prussian);
   backdrop-filter: blur(10px);
 }
 
@@ -100,8 +108,8 @@ a {
   width: 38px;
   height: 38px;
   place-items: center;
-  background: var(--bone);
-  color: var(--night);
+  background: var(--prussian);
+  color: var(--parchment);
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.04em;
@@ -116,7 +124,7 @@ a {
 
 .atlas-brand small {
   align-self: start;
-  color: #9f998b;
+  color: var(--faded-blue);
   font-family: var(--mono);
   font-size: 8px;
   letter-spacing: 0.08em;
@@ -126,56 +134,58 @@ a {
   display: flex;
   align-items: center;
   gap: 22px;
-  color: #9f998b;
+  color: var(--muted);
   font-family: var(--mono);
   font-size: 10px;
 }
 
 .draft-status {
   padding: 6px 9px;
-  border: 1px solid rgba(232, 223, 204, 0.24);
-  background: rgba(232, 223, 204, 0.06);
-  color: var(--bone);
+  border: 1px solid var(--line-dark);
+  background: rgba(220, 235, 240, 0.5);
+  color: var(--accent);
 }
 
-.mythic-prelude {
+.natural-prelude {
   position: relative;
   min-height: 292px;
   overflow: hidden;
-  border-bottom: 1px solid rgba(232, 223, 204, 0.18);
-  background-color: var(--night);
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(20, 18, 15, 1) 0%,
-      rgba(20, 18, 15, 0.98) 25%,
-      rgba(20, 18, 15, 0.72) 46%,
-      rgba(20, 18, 15, 0.08) 72%
-    ),
-    linear-gradient(0deg, rgba(20, 18, 15, 0.88) 0%, transparent 48%),
-    url("/gilgamesh-engraving.png");
-  background-position: center;
-  background-size: cover;
-  color: var(--bone);
+  border-bottom: 1px solid var(--line-dark);
+  background-color: var(--parchment);
+  color: var(--prussian);
 }
 
-.mythic-prelude::after {
+.natural-prelude::before {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 68% 48%, transparent 0, rgba(20, 18, 15, 0.1) 38%, rgba(20, 18, 15, 0.52) 100%),
-    linear-gradient(180deg, rgba(20, 18, 15, 0.12), rgba(20, 18, 15, 0.46));
+  background-image: url("/greenland-shark-plate.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   content: "";
   pointer-events: none;
 }
 
-.prelude-grain {
+.natural-prelude::after {
   position: absolute;
-  z-index: 1;
   inset: 0;
-  opacity: 0.2;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
-  mix-blend-mode: overlay;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(243, 238, 220, 1) 0%,
+      rgba(243, 238, 220, 1) 58%,
+      rgba(243, 238, 220, 0.96) 68%,
+      rgba(243, 238, 220, 0.18) 82%,
+      transparent 92%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 119px,
+      rgba(27, 102, 139, 0.035) 119px,
+      rgba(27, 102, 139, 0.035) 120px
+    );
+  content: "";
   pointer-events: none;
 }
 
@@ -189,7 +199,7 @@ a {
 
 .prelude-kicker {
   margin: 0 0 18px;
-  color: #a9a18f;
+  color: var(--faded-blue);
   font-family: var(--mono);
   font-size: 9px;
   letter-spacing: 0.16em;
@@ -205,13 +215,25 @@ a {
   line-height: 1.16;
 }
 
-.prelude-copy > p:last-child {
+.prelude-summary {
   max-width: 570px;
   margin: 20px 0 0;
-  color: #aaa391;
+  color: var(--muted);
   font-family: var(--serif);
   font-size: 13px;
   line-height: 1.75;
+}
+
+.prelude-source {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  margin-top: 13px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--faded-blue);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 9px;
 }
 
 .plate-caption {
@@ -222,7 +244,7 @@ a {
   display: flex;
   gap: 15px;
   align-items: baseline;
-  color: #b6ae9c;
+  color: var(--accent);
   font-family: var(--mono);
   font-size: 8px;
   letter-spacing: 0.1em;
@@ -230,7 +252,7 @@ a {
 
 .plate-caption p {
   margin: 0;
-  color: #7f7a6e;
+  color: var(--faded-blue);
 }
 
 .has-prelude .atlas-layout {
@@ -395,7 +417,7 @@ a {
   padding: 15px;
   border: 1px solid var(--line-dark);
   background:
-    linear-gradient(135deg, rgba(111, 119, 105, 0.035), transparent 48%),
+    linear-gradient(135deg, rgba(27, 102, 139, 0.035), transparent 48%),
     var(--surface);
   cursor: pointer;
   font-family: var(--serif);
@@ -452,7 +474,7 @@ a {
   overflow-y: auto;
   padding: 26px 22px 30px;
   background:
-    linear-gradient(180deg, rgba(111, 119, 105, 0.05), transparent 210px),
+    linear-gradient(180deg, rgba(27, 102, 139, 0.06), transparent 210px),
     var(--surface);
 }
 
@@ -880,7 +902,7 @@ a {
   margin-top: 28px;
 }
 
-.tithonus-note {
+.nature-note {
   display: grid;
   grid-template-columns: 180px minmax(0, 1fr) auto;
   gap: 28px;
@@ -891,7 +913,7 @@ a {
   border-bottom: 1px solid var(--line-dark);
 }
 
-.tithonus-note > span {
+.nature-note > span {
   color: var(--accent);
   font-family: var(--mono);
   font-size: 9px;
@@ -899,7 +921,7 @@ a {
   line-height: 1.6;
 }
 
-.tithonus-note p {
+.nature-note p {
   max-width: 650px;
   margin: 0;
   color: var(--muted);
@@ -908,12 +930,12 @@ a {
   line-height: 1.8;
 }
 
-.tithonus-note strong {
+.nature-note strong {
   color: var(--foreground);
   font-weight: 500;
 }
 
-.tithonus-note a {
+.nature-note a {
   padding-bottom: 3px;
   border-bottom: 1px solid var(--accent);
   color: var(--accent);
@@ -1104,19 +1126,33 @@ a {
     padding: 28px 16px 80px;
   }
 
-  .mythic-prelude {
+  .natural-prelude {
     min-height: 328px;
-    background-image:
+  }
+
+  .natural-prelude::before {
+    top: 138px;
+    height: 190px;
+    opacity: 0.46;
+    background-size: auto 100%;
+  }
+
+  .natural-prelude::after {
+    background:
       linear-gradient(
         90deg,
-        rgba(20, 18, 15, 1) 0%,
-        rgba(20, 18, 15, 0.96) 44%,
-        rgba(20, 18, 15, 0.48) 78%,
-        rgba(20, 18, 15, 0.2) 100%
+        rgba(243, 238, 220, 1) 0%,
+        rgba(243, 238, 220, 0.98) 45%,
+        rgba(243, 238, 220, 0.68) 76%,
+        rgba(243, 238, 220, 0.2) 100%
       ),
-      linear-gradient(0deg, rgba(20, 18, 15, 0.94) 0%, transparent 60%),
-      url("/gilgamesh-engraving.png");
-    background-position: 67% center;
+      repeating-linear-gradient(
+        90deg,
+        transparent 0,
+        transparent 79px,
+        rgba(27, 102, 139, 0.03) 79px,
+        rgba(27, 102, 139, 0.03) 80px
+      );
   }
 
   .prelude-copy {
@@ -1128,7 +1164,7 @@ a {
     font-size: clamp(30px, 9vw, 42px);
   }
 
-  .prelude-copy > p:last-child {
+  .prelude-summary {
     max-width: 480px;
     font-size: 12px;
   }
@@ -1148,7 +1184,7 @@ a {
   .analysis-grid,
   .paper-record,
   .criteria-list > div,
-  .tithonus-note,
+  .nature-note,
   .change-entry,
   .next-research {
     grid-template-columns: 1fr;
@@ -1231,13 +1267,13 @@ a {
   }
 
   .criteria-list > div,
-  .tithonus-note,
+  .nature-note,
   .change-entry,
   .next-research {
     gap: 10px;
   }
 
-  .tithonus-note a {
+  .nature-note a {
     justify-self: start;
   }
 }
@@ -1255,7 +1291,7 @@ a {
     grid-row: 1;
   }
 
-  .mythic-prelude {
+  .natural-prelude {
     min-height: 350px;
   }
 
