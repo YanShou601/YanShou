@@ -2,546 +2,863 @@
 
 import { useMemo, useState } from "react";
 
-type Layer = "all" | "foundation" | "conditional" | "experimental";
+type PaperType = "Meta-analysis" | "RCT" | "Systematic review";
+type Screen = "board" | "method" | "changelog";
 
-type EvidenceItem = {
+type Paper = {
+  id: string;
+  type: PaperType;
+  year: number;
+  title: string;
+  journal: string;
+  population: string;
+  duration: string;
+  result: string;
+  limitation: string;
+  url: string;
+};
+
+type Dossier = {
   id: string;
   name: string;
   english: string;
-  layer: Exclude<Layer, "all">;
-  layerLabel: string;
-  priority: number;
-  evidence: string;
-  evidenceTone: "strong" | "moderate" | "limited";
-  oneLine: string;
-  rationale: string;
-  action: string;
-  caution: string;
-  source: string;
-  sourceLabel: string;
+  tier: "T1" | "T2" | "T3" | "T4";
+  tierLabel: string;
+  status: string;
+  target: string;
+  verdict: string;
+  why: string;
+  condition: string;
+  risk: string;
+  papers: Paper[];
 };
 
-const evidenceItems: EvidenceItem[] = [
-  {
-    id: "strength",
-    name: "力量训练",
-    english: "RESISTANCE TRAINING",
-    layer: "foundation",
-    layerLabel: "行为基础",
-    priority: 5,
-    evidence: "较强",
-    evidenceTone: "strong",
-    oneLine: "肌力、肌肉量、骨骼与代谢健康的共同支点。",
-    rationale:
-      "这是原始清单里最值得保留的第一优先级。长期观察研究将规律力量训练与更低的全因及心血管死亡风险联系起来，且对衰弱和跌倒风险具有现实意义。",
-    action: "从每周 2–3 次全身渐进训练开始，记录动作、负重、次数与恢复。",
-    caution: "心血管疾病、关节损伤或长期未运动者，应先评估并循序渐进。",
-    source:
-      "https://bjsm.bmj.com/content/60/12/874.full",
-    sourceLabel: "BJSM · 长期力量训练研究",
-  },
-  {
-    id: "protein",
-    name: "足够蛋白质",
-    english: "ADEQUATE PROTEIN",
-    layer: "foundation",
-    layerLabel: "行为基础",
-    priority: 5,
-    evidence: "较强",
-    evidenceTone: "strong",
-    oneLine: "与训练配合，帮助维持肌肉和功能储备。",
-    rationale:
-      "蛋白质不是越多越好，关键是满足总量、分布和质量。老年人常以每日 1.0–1.2 g/kg 为基础讨论，活动量较高者可能需要更高，但应结合热量与肾功能。",
-    action: "先计算日常饮食，再按缺口补充；把蛋白质分布到各餐，而非只集中在一餐。",
-    caution: "慢性肾病、肝病或特殊代谢疾病需要个体化方案。",
-    source: "https://pubmed.ncbi.nlm.nih.gov/23867520/",
-    sourceLabel: "PROT-AGE · 老年蛋白质建议",
-  },
-  {
-    id: "cardio",
-    name: "有氧与心肺能力",
-    english: "CARDIORESPIRATORY FITNESS",
-    layer: "foundation",
-    layerLabel: "行为基础",
-    priority: 5,
-    evidence: "较强",
-    evidenceTone: "strong",
-    oneLine: "原清单遗漏，但应与力量训练处于同一层级。",
-    rationale:
-      "延寿不能只看肌肉。心肺适能、日常活动量和代谢控制共同决定健康寿命，因此不能让补剂占据本该属于运动的注意力。",
-    action: "建立低强度有氧底盘，并在适合时加入少量更高强度训练。",
-    caution: "胸痛、晕厥、异常气促或已知心脏病应先接受医疗评估。",
-    source:
-      "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
-    sourceLabel: "WHO · 身体活动建议",
-  },
+const dossiers: Dossier[] = [
   {
     id: "creatine",
     name: "肌酸一水合物",
-    english: "CREATINE MONOHYDRATE",
-    layer: "foundation",
-    layerLabel: "高价值补充",
-    priority: 4,
-    evidence: "较强",
-    evidenceTone: "strong",
-    oneLine: "补剂中证据相对扎实，主要价值在力量与瘦体重。",
-    rationale:
-      "对训练表现和肌肉的支持比“提升大脑能量”的宣传更可靠。认知研究存在积极信号，但证据确定性和适用人群仍不如肌肉方向清晰。",
-    action: "若纳入方案，优先选择成分单一的肌酸一水合物，并把训练表现作为主要观察指标。",
-    caution: "肾病、妊娠或使用可能影响肾功能的药物时，应先咨询医生。",
-    source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11275561/",
-    sourceLabel: "2024 · 肌酸与认知系统综述",
+    english: "Creatine monohydrate",
+    tier: "T1",
+    tierLabel: "证据相对充分",
+    status: "纳入候选",
+    target: "力量、瘦体重、训练表现",
+    verdict:
+      "补剂中证据较稳定的一项。主要价值在肌肉与训练适应；认知方向有信号，但确定性明显更低。",
+    why:
+      "多项随机试验和荟萃分析在不同年龄层观察到力量或瘦体重改善，尤其与阻力训练同时实施时。它没有被证明能延长人类寿命。",
+    condition:
+      "把训练表现、力量和体成分作为主要观察目标；不把短期体重上升误判为脂肪增加。",
+    risk:
+      "肾病、妊娠或使用可能影响肾功能的药物时，先由医生评估。选择成分单一的肌酸一水合物。",
+    papers: [
+      {
+        id: "cr-2017",
+        type: "Meta-analysis",
+        year: 2017,
+        title:
+          "Effect of creatine supplementation during resistance training on lean tissue mass and muscular strength in older adults",
+        journal: "Open Access Journal of Sports Medicine",
+        population: "22 项研究 · 721 人 · 平均年龄约 57–70 岁",
+        duration: "7–52 周；每周训练 2–3 次",
+        result:
+          "相较安慰剂＋训练，肌酸组瘦体重平均多增加 1.37 kg；胸推和腿举力量亦有小幅但显著优势。",
+        limitation:
+          "研究方案、剂量和人群存在差异；结果主要支持“配合训练”，不能外推为单独服用即可抗衰。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29138605/",
+      },
+      {
+        id: "cr-2024-function",
+        type: "Meta-analysis",
+        year: 2024,
+        title:
+          "Creatine supplementation for optimization of physical function in patients at risk of functional disability",
+        journal: "Journal of Parenteral and Enteral Nutrition",
+        population: "33 项 RCT · 1,076 人",
+        duration: "纳入老年人及慢性病成人",
+        result:
+          "坐站表现 SMD 0.51；上肢力量和握力小幅改善；瘦体重平均增加 1.08 kg。",
+        limitation:
+          "多数结局的证据质量为低或极低；作者明确要求更高质量的前瞻性试验验证。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/38417175/",
+      },
+      {
+        id: "cr-2024-cognition",
+        type: "Systematic review",
+        year: 2024,
+        title: "The effects of creatine supplementation on cognitive function in adults",
+        journal: "Frontiers in Nutrition",
+        population: "成人随机对照试验系统综述",
+        duration: "检索 1993–2024 年研究",
+        result:
+          "记忆和部分处理速度指标出现积极信号，但不同认知领域结果并不一致。",
+        limitation:
+          "处理速度、总体认知、执行功能和注意力等结论确定性偏低，不能把认知收益当作已确认事实。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/39070254/",
+      },
+    ],
   },
   {
     id: "omega3",
     name: "DHA / EPA",
-    english: "OMEGA-3",
-    layer: "conditional",
-    layerLabel: "按缺口决定",
-    priority: 3,
-    evidence: "情境相关",
-    evidenceTone: "moderate",
-    oneLine: "价值取决于鱼类摄入、甘油三酯与心血管背景。",
-    rationale:
-      "把 DHA 简化成“人人必补的大脑与心血管补剂”并不准确。综合试验显示心血管获益整体偏温和，不同制剂、剂量和人群差异明显。",
-    action: "先看每周鱼类摄入与血脂；补充剂不能替代对 ApoB、血压和吸烟的管理。",
-    caution: "房颤、抗凝药、出血风险或高剂量使用，需要医疗评估。",
-    source: "https://pubmed.ncbi.nlm.nih.gov/38869144/",
-    sourceLabel: "2024 · Omega-3 心血管结局荟萃分析",
+    english: "Omega-3 fatty acids",
+    tier: "T1",
+    tierLabel: "证据较多但依赖场景",
+    status: "条件纳入",
+    target: "甘油三酯、心血管风险、饮食缺口",
+    verdict:
+      "研究量大，但不能概括为“人人都应补 DHA”。配方、剂量、是否为处方级 EPA 以及基础风险会改变结论。",
+    why:
+      "大型试验和荟萃分析显示部分心血管结局有温和改善，但 EPA 单方与 EPA＋DHA 的结果不同；一般人群一级预防的收益并不稳定。",
+    condition:
+      "先评估每周鱼类摄入、甘油三酯和既往心血管病。不要用普通鱼油替代医生开具的处方制剂。",
+    risk:
+      "高剂量可能增加房颤或出血相关顾虑；房颤、抗凝药、术前和出血风险人群应先咨询医生。",
+    papers: [
+      {
+        id: "om-2024-events",
+        type: "Meta-analysis",
+        year: 2024,
+        title:
+          "Effects of omega-3 fatty acids on coronary revascularization and cardiovascular events",
+        journal: "European Journal of Preventive Cardiology",
+        population: "18 项 RCT · 134,144 人",
+        duration: "4.5 个月–7.4 年",
+        result:
+          "血运重建 RR 0.90、心肌梗死 RR 0.89、心血管死亡 RR 0.92；总体效应温和，EPA 单方信号更强。",
+        limitation:
+          "制剂和人群高度异质，血运重建结局 I² 为 68%；研究部门曾接受相关厂商无条件资助。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/38869144/",
+      },
+      {
+        id: "om-2024-rx",
+        type: "Meta-analysis",
+        year: 2024,
+        title:
+          "The effect of omega-3 PUFA prescription preparations on prevention of clinical cardiovascular disease",
+        journal: "Nutrition Journal",
+        population: "12 项 RCT · 99,830 人",
+        duration: "均为至少 1 年的长期研究",
+        result:
+          "处方级 omega-3 的心血管效果随成分、剂量和受试者风险背景而变化，支持按临床场景拆分判断。",
+        limitation:
+          "只纳入处方制剂，不能直接外推到市售鱼油；分析没有解释甘油三酯水平在获益中的作用。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/39639295/",
+      },
+    ],
   },
   {
     id: "coq10",
     name: "辅酶 Q10",
-    english: "COENZYME Q10",
-    layer: "conditional",
-    layerLabel: "特定场景",
-    priority: 2,
-    evidence: "有限 / 情境相关",
-    evidenceTone: "moderate",
-    oneLine: "健康人“线粒体支持”不等于已证实的延寿收益。",
-    rationale:
-      "Q10 在特定疾病或用药场景可能有讨论价值，但健康人长期常规使用的证据不足。近期随机试验中，血液水平升高并未转化为线粒体功能改善。",
-    action: "只有在明确目标下试用，例如与医生讨论他汀相关肌肉症状，而非作为默认基础补剂。",
-    caution: "可能与华法林等药物相互作用；心血管治疗中不要自行替代处方药。",
-    source: "https://pubmed.ncbi.nlm.nih.gov/41604113/",
-    sourceLabel: "2026 · Q10 随机对照试验",
+    english: "Coenzyme Q10",
+    tier: "T2",
+    tierLabel: "特定情境可讨论",
+    status: "暂不常规纳入",
+    target: "特定疾病或用药情境",
+    verdict:
+      "健康人“支持线粒体”的说法缺少稳定的人体功能结局；在特定疾病或他汀相关症状中可另行评估。",
+    why:
+      "补充后血浆浓度上升并不代表肌肉线粒体或体能会改善。现有阳性结果更多集中在特定患者而非健康人延寿。",
+    condition:
+      "必须先定义具体临床问题；若没有目标或缺口，不作为基础补剂。",
+    risk:
+      "可能影响华法林等药物；不能替代心衰、血脂或其他心血管标准治疗。",
+    papers: [
+      {
+        id: "q10-2026",
+        type: "RCT",
+        year: 2026,
+        title:
+          "Coenzyme Q10 supplementation raises plasma levels without improving mitochondrial function in older adults",
+        journal: "GeroScience",
+        population: "40 名社区老年人 · 平均 74 岁",
+        duration: "400 mg/日 · 12 周",
+        result:
+          "血浆 Q10 显著升高，但肌肉线粒体功能、VO₂max、糖代谢和体成分均未改善。",
+        limitation:
+          "样本较小、周期较短且受试者较健康；不能回答特定疾病人群是否获益。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/41604113/",
+      },
+      {
+        id: "q10-2022",
+        type: "Meta-analysis",
+        year: 2022,
+        title:
+          "Effects of Coenzyme Q10 supplementation on biomarkers of oxidative stress in adults",
+        journal: "Antioxidants",
+        population: "成人随机对照试验汇总",
+        duration: "不同剂量与周期",
+        result:
+          "部分疾病人群的氧化应激标志物下降，但在健康人亚组未观察到一致效果。",
+        limitation:
+          "生物标志物不是健康寿命结局；疾病、剂量与试验质量差异较大。",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9311997/",
+      },
+    ],
   },
   {
     id: "nmn",
     name: "NMN",
-    english: "NAD⁺ PRECURSOR",
-    layer: "experimental",
-    layerLabel: "实验层",
-    priority: 2,
-    evidence: "人体证据有限",
-    evidenceTone: "limited",
-    oneLine: "能改变 NAD⁺ 相关指标，但尚未证明延长人类寿命。",
-    rationale:
-      "机制与动物实验令人关注，但人体研究常见样本小、时间短、结局分散。近期汇总没有发现对肌肉量、握力、步速等结果的稳定改善。",
-    action: "若仍选择尝试，应一次只引入一种，并预先定义观察指标、周期与停用条件。",
-    caution: "长期安全性、肿瘤相关情境及与药物的相互作用仍缺少充分数据。",
-    source: "https://pubmed.ncbi.nlm.nih.gov/40275690/",
-    sourceLabel: "2025 · NMN/NR 与肌肉功能荟萃分析",
+    english: "Nicotinamide mononucleotide",
+    tier: "T3",
+    tierLabel: "指标变化多于临床获益",
+    status: "研究观察",
+    target: "NAD⁺ 相关生化指标",
+    verdict:
+      "短期人体研究通常能看到 NAD⁺ 相关指标变化，但肌肉、体能、代谢和健康寿命结局并不稳定。",
+    why:
+      "“提高 NAD⁺”证明作用通路被触达，却不能证明衰老被逆转。当前最大缺口是长期、独立、临床相关的人体结局。",
+    condition:
+      "如进行个人实验，应只引入一种产品，并预先定义功能指标、周期和停止条件。",
+    risk:
+      "长期安全、肿瘤相关情境及药物相互作用资料不足；产品纯度和真实剂量亦是问题。",
+    papers: [
+      {
+        id: "nmn-2025",
+        type: "Meta-analysis",
+        year: 2025,
+        title:
+          "The Effect of Nicotinamide Mononucleotide and Riboside on Skeletal Muscle Mass and Function",
+        journal: "Journal of Cachexia, Sarcopenia and Muscle",
+        population: "平均年龄 60.9–83 岁的 RCT",
+        duration: "多项短期试验汇总",
+        result:
+          "NMN 对骨骼肌指数、握力、步速和五次坐站均无显著改善。",
+        limitation:
+          "纳入试验数量和样本有限，但当前结果不支持其用于保存老年人肌肉量或功能。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/40275690/",
+      },
+      {
+        id: "nmn-2024",
+        type: "RCT",
+        year: 2024,
+        title:
+          "NMN increased blood NAD levels, maintained walking speed, and improved sleep quality in older adults",
+        journal: "GeroScience",
+        population: "60 名老年人",
+        duration: "随机双盲 · 12 周",
+        result:
+          "血液 NAD 相关指标上升，并出现步行速度和主观睡眠方面的积极信号。",
+        limitation:
+          "样本小、周期短；多位作者来自产品相关企业，且单项阳性结果尚需独立重复。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/38789831/",
+      },
+    ],
   },
   {
     id: "spermidine",
     name: "亚精胺",
-    english: "SPERMIDINE",
-    layer: "experimental",
-    layerLabel: "实验层",
-    priority: 2,
-    evidence: "人体证据有限",
-    evidenceTone: "limited",
-    oneLine: "自噬机制有吸引力，临床主要终点尚未确认。",
-    rationale:
-      "动物和机制证据推动了热度，但一项 12 个月、100 人的随机试验中，主要认知与生物标志物结果没有显示明确获益。",
-    action: "优先从全谷物、豆类、菌菇等食物模式获得相关营养，不急于依赖高价提取物。",
-    caution: "高纯度、高剂量长期补充的人体安全资料仍有限。",
-    source: "https://pubmed.ncbi.nlm.nih.gov/35616942/",
-    sourceLabel: "2022 · 亚精胺随机临床试验",
+    english: "Spermidine",
+    tier: "T3",
+    tierLabel: "机制强于临床证据",
+    status: "研究观察",
+    target: "自噬、认知老化",
+    verdict:
+      "自噬机制与动物数据令人关注，但较完整的人体随机试验未确认主要认知获益。",
+    why:
+      "早期小试验的积极信号在更大、更长的后续试验中没有复现主要终点。",
+    condition:
+      "现阶段更适合作为研究主题；饮食来源与完整食物模式优先于高价提取物。",
+    risk:
+      "长期高剂量、不同化学形式和真实生物利用度仍不明确。",
+    papers: [
+      {
+        id: "sp-2022",
+        type: "RCT",
+        year: 2022,
+        title:
+          "Effects of Spermidine Supplementation on Cognition and Biomarkers in Older Adults With Subjective Cognitive Decline",
+        journal: "JAMA Network Open",
+        population: "100 人 · 平均 69 岁",
+        duration: "0.9 mg/日 · 12 个月",
+        result:
+          "主要记忆终点组间差异 −0.03（95% CI −0.11 至 0.05，P=.47），未显示明确获益。",
+        limitation:
+          "剂量可能不足；探索性分析出现语言记忆和炎症信号，但需要新的验证试验。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/35616942/",
+      },
+      {
+        id: "sp-2024",
+        type: "RCT",
+        year: 2024,
+        title:
+          "Supplementation of spermidine at 40 mg/day has minimal effects on circulating polyamines",
+        journal: "Nutrition Research",
+        population: "37 名健康男性 · 50–70 岁",
+        duration: "40 mg/日 · 28 天",
+        result:
+          "短期耐受性良好，但血清和尿液多胺水平变化很小。",
+        limitation:
+          "研究重点是短期安全性，不是临床获益；仅男性且只有 28 天。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/39405978/",
+      },
+    ],
   },
   {
     id: "ergothioneine",
     name: "麦角硫因",
-    english: "ERGOTHIONEINE",
-    layer: "experimental",
-    layerLabel: "观察层",
-    priority: 2,
-    evidence: "新兴",
-    evidenceTone: "limited",
-    oneLine: "有趣的新兴抗氧化方向，尚不足以成为基础栈。",
-    rationale:
-      "观察性研究与早期干预信号值得继续跟踪，但距离证明改善健康寿命仍有明显距离。菌菇等食物来源通常比单一补剂更稳妥。",
-    action: "现阶段以食物来源和研究跟踪为主，除非存在明确的个人实验目的。",
-    caution: "产品质量、有效剂量与长期临床结局尚未形成共识。",
-    source: "https://pubmed.ncbi.nlm.nih.gov/40968729/",
-    sourceLabel: "2025 · 麦角硫因与健康老化综述",
+    english: "Ergothioneine",
+    tier: "T4",
+    tierLabel: "早期探索",
+    status: "等待重复",
+    target: "认知、氧化应激",
+    verdict:
+      "存在小型人体试验信号，但样本过小，尚不足以形成常规补充建议。",
+    why:
+      "机制、观察性关联和少量干预研究方向一致，但临床结局、剂量和适用人群仍未确定。",
+    condition:
+      "以菌菇等食物来源为主；补充剂只适合明确知情的探索性尝试。",
+    risk:
+      "长期真实世界安全性、产品质量和不同人群反应资料有限。",
+    papers: [
+      {
+        id: "ergo-2024",
+        type: "RCT",
+        year: 2024,
+        title:
+          "Investigating the efficacy of ergothioneine to delay cognitive decline in mild cognitively impaired subjects",
+        journal: "Journal of Alzheimer's Disease",
+        population: "19 名 60 岁以上轻度认知障碍者",
+        duration: "25 mg · 每周 3 次 · 1 年",
+        result:
+          "学习能力和神经丝轻链指标出现积极信号，安全化验未见明显异常。",
+        limitation:
+          "只有 19 人，是探索性试验；不足以排除偶然结果，也不能外推到健康成年人。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/39544014/",
+      },
+      {
+        id: "ergo-2025",
+        type: "Systematic review",
+        year: 2025,
+        title:
+          "Ergothioneine for cognitive health, longevity and healthy ageing: where are we now?",
+        journal: "Nutrients",
+        population: "机制、观察性与早期干预研究综述",
+        duration: "截至 2025 年证据",
+        result:
+          "早期人体研究提示认知、睡眠和神经退行性标志物方向值得继续测试。",
+        limitation:
+          "多数结论依赖观察性资料或小规模干预；尚无延长健康寿命的直接证据。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/40968729/",
+      },
+    ],
   },
   {
     id: "pqq",
     name: "PQQ",
-    english: "PYRROLOQUINOLINE QUINONE",
-    layer: "experimental",
-    layerLabel: "观察层",
-    priority: 1,
-    evidence: "证据很有限",
-    evidenceTone: "limited",
-    oneLine: "“促进线粒体生成”主要仍是机制叙事。",
-    rationale:
-      "现有人体试验规模和临床相关性有限，尚不能证明其带来可感知、可重复的延寿或功能收益。",
-    action: "从当前方案中暂缓，把预算留给训练、睡眠、体检与饮食质量。",
-    caution: "不要把生化机制直接等同于人体临床获益。",
-    source: "https://www.jstage.jst.go.jp/article/jmi/71/1.2/71_23/_pdf",
-    sourceLabel: "PQQ 人体研究综述",
+    english: "Pyrroloquinoline quinone",
+    tier: "T4",
+    tierLabel: "早期探索",
+    status: "暂不纳入",
+    target: "线粒体、认知",
+    verdict:
+      "“促进线粒体生成”主要仍是机制叙事。人体试验小且常使用复方，无法确认 PQQ 本身的贡献。",
+    why:
+      "存在个别认知和生物标志物信号，但研究设计无法支持健康人延寿结论。",
+    condition:
+      "保留在观察清单，不作为当前补充栈。",
+    risk:
+      "有效剂量、长期安全性及与其他补剂的相互作用缺少可靠数据。",
+    papers: [
+      {
+        id: "pqq-2024",
+        type: "RCT",
+        year: 2024,
+        title:
+          "Six-week dihydrogen-PQQ supplementation on mitochondrial biomarkers, brain metabolism, and cognition",
+        journal: "GeroScience",
+        population: "65 岁以上轻度认知障碍者",
+        duration: "复方制剂 · 6 周",
+        result:
+          "MMSE 组间交互不显著（P=.58）；个别定向力和脑代谢指标出现积极信号。",
+        limitation:
+          "PQQ 与氢气复方同时使用，无法识别 PQQ 单独作用；周期短且人群特殊。",
+        url: "https://pubmed.ncbi.nlm.nih.gov/38908296/",
+      },
+      {
+        id: "pqq-2024-review",
+        type: "Systematic review",
+        year: 2024,
+        title: "The effects of pyrroloquinoline quinone on human health",
+        journal: "Journal of Medical Investigation",
+        population: "现有人体补充研究综述",
+        duration: "多项小型短期研究",
+        result:
+          "睡眠、疲劳、认知和炎症指标有零散积极结果。",
+        limitation:
+          "试验小、结局多、复方和利益相关问题限制结论，缺少硬临床结局。",
+        url: "https://www.jstage.jst.go.jp/article/jmi/71/1.2/71_23/_pdf",
+      },
+    ],
   },
 ];
 
-const filters: Array<{ id: Layer; label: string; caption: string }> = [
-  { id: "all", label: "全部", caption: "10 项" },
-  { id: "foundation", label: "基础层", caption: "先执行" },
-  { id: "conditional", label: "条件层", caption: "看缺口" },
-  { id: "experimental", label: "实验层", caption: "谨慎试" },
-];
+const tierInfo = [
+  {
+    tier: "T1",
+    label: "证据较多 / 适用条件相对清楚",
+    note: "不是“人人必吃”，而是可以进入个体化候选清单。",
+  },
+  {
+    tier: "T2",
+    label: "特定情境可能有价值",
+    note: "需要明确疾病、用药或缺口，健康人常规使用证据不足。",
+  },
+  {
+    tier: "T3",
+    label: "能改变指标，临床获益未稳",
+    note: "机制可行或生化指标改变，但功能结局尚不可靠。",
+  },
+  {
+    tier: "T4",
+    label: "早期探索 / 等待重复",
+    note: "小型、短期或复方研究为主，暂不进入日常补充栈。",
+  },
+] as const;
 
-const layerDescriptions = [
-  {
-    number: "01",
-    title: "行为基础",
-    subtitle: "先把确定性做满",
-    text: "训练、蛋白质、心肺能力、睡眠与代谢风险管理，决定了方案的大部分回报。",
-  },
-  {
-    number: "02",
-    title: "缺口补充",
-    subtitle: "根据饮食与化验",
-    text: "肌酸可作为高价值补充；Omega-3、维生素和矿物质则应由缺口与场景决定。",
-  },
-  {
-    number: "03",
-    title: "实验观察",
-    subtitle: "机制不是结论",
-    text: "NMN、亚精胺、麦角硫因和 PQQ 保留研究兴趣，但不冒充已经证实的延寿方案。",
-  },
-];
-
-const sourceLinks = [
-  {
-    label: "Bryan Johnson · 当前协议",
-    href: "https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-protocol",
-  },
-  {
-    label: "Bryan Johnson · YouTube",
-    href: "https://www.youtube.com/@BryanJohnson",
-  },
-  {
-    label: "Bryan Johnson · 个人主页",
-    href: "https://bryanjohnson.komi.io/",
-  },
-  {
-    label: "Blueprint 官网",
-    href: "https://blueprint.bryanjohnson.com/",
-  },
+const paperTypes: Array<"All" | PaperType> = [
+  "All",
+  "Meta-analysis",
+  "RCT",
+  "Systematic review",
 ];
 
 export default function Home() {
-  const [filter, setFilter] = useState<Layer>("all");
+  const [screen, setScreen] = useState<Screen>("board");
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [paperType, setPaperType] = useState<"All" | PaperType>("All");
 
-  const visibleItems = useMemo(
-    () =>
-      filter === "all"
-        ? evidenceItems
-        : evidenceItems.filter((item) => item.layer === filter),
-    [filter],
-  );
+  const selected = dossiers.find((item) => item.id === selectedId) ?? null;
+  const filteredPapers = useMemo(() => {
+    if (!selected) return [];
+    return paperType === "All"
+      ? selected.papers
+      : selected.papers.filter((paper) => paper.type === paperType);
+  }, [selected, paperType]);
+
+  function showBoard() {
+    setScreen("board");
+    setSelectedId(null);
+    setPaperType("All");
+  }
+
+  function showDossier(id: string) {
+    setScreen("board");
+    setSelectedId(id);
+    setPaperType("All");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   return (
-    <main>
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="回到页面顶部">
-          <span className="brand-mark" aria-hidden="true">✦</span>
-          <span>
-            <b>LONGEVITY</b>
-            <small>FIELD NOTES · 001</small>
-          </span>
-        </a>
-        <nav aria-label="主导航">
-          <a href="#method">方法</a>
-          <a href="#evidence">证据图谱</a>
-          <a href="#practice">执行框架</a>
-          <a href="#sources">来源</a>
-        </nav>
-        <span className="issue">JUL · 2026</span>
+    <main className="atlas-app">
+      <header className="atlas-header">
+        <button className="atlas-brand" type="button" onClick={showBoard}>
+          <span>LEA</span>
+          <strong>延寿证据图谱</strong>
+          <small>LONGEVITY EVIDENCE ATLAS</small>
+        </button>
+        <div className="header-meta">
+          <span>研究框架 v0.2</span>
+          <span>最后复核 2026-07-20</span>
+          <span className="draft-status">持续更新</span>
+        </div>
       </header>
 
-      <section className="hero" id="top">
-        <img
-          className="hero-image"
-          src="/hero-deer.png"
-          alt="晨雾森林中的鹿与野花，象征以自然和证据理解健康寿命"
+      <div className="atlas-layout">
+        <section className="atlas-content">
+          {screen === "board" && !selected && (
+            <Board onSelect={showDossier} />
+          )}
+          {screen === "board" && selected && (
+            <DossierView
+              dossier={selected}
+              papers={filteredPapers}
+              paperType={paperType}
+              onPaperType={setPaperType}
+              onBack={showBoard}
+            />
+          )}
+          {screen === "method" && <MethodView />}
+          {screen === "changelog" && <ChangelogView />}
+        </section>
+
+        <ResearchRail
+          selectedId={selectedId}
+          screen={screen}
+          onBoard={showBoard}
+          onSelect={showDossier}
+          onScreen={(next) => {
+            setSelectedId(null);
+            setScreen(next);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
         />
-        <div className="paper-grid" aria-hidden="true" />
-        <div className="petal petal-one" aria-hidden="true" />
-        <div className="petal petal-two" aria-hidden="true" />
-        <div className="petal petal-three" aria-hidden="true" />
-        <div className="hero-copy">
-          <p className="eyebrow">A FIELD GUIDE TO HEALTHSPAN</p>
-          <h1>
-            把长寿，
-            <br />
-            重新交给证据
-          </h1>
-          <p className="hero-lede">
-            参考 Bryan Johnson 的 Blueprint，但不照抄他的生活。我们逐项核对人体研究、潜在收益、风险、成本与适用条件。
-          </p>
-          <div className="hero-actions">
-            <a className="primary-link" href="#evidence">
-              查看证据图谱 <span aria-hidden="true">↘</span>
-            </a>
-            <a className="text-link" href="#method">
-              阅读分析原则
-            </a>
-          </div>
+      </div>
+    </main>
+  );
+}
+
+function Board({ onSelect }: { onSelect: (id: string) => void }) {
+  return (
+    <>
+      <div className="page-kicker">
+        <span>INDEX / 01</span>
+        <span>SUPPLEMENT EVIDENCE</span>
+      </div>
+      <div className="board-intro">
+        <div>
+          <p className="section-overline">TIER BOARD</p>
+          <h1>补充剂证据分层</h1>
         </div>
-        <aside className="hero-note" aria-label="本期摘要">
-          <span>本期摘要</span>
-          <strong>10</strong>
-          <p>项干预重新排序</p>
-          <i />
-          <p>行为优先 · 补剂后置</p>
-        </aside>
-        <p className="hero-caption">
-          CERVUS ELAPHUS · 自然不是捷径，而是尺度
+        <p>
+          这是研究优先级，不是购物清单。Tier 综合人体证据、临床相关性、可重复性、安全边界与适用条件；点击项目进入论文档案。
         </p>
+      </div>
+
+      <div className="scope-note">
+        <strong>不在本榜混排</strong>
+        <span>
+          力量训练、有氧、睡眠与足够蛋白质属于基础干预，将在后续“行为证据库”单独建档。
+        </span>
+      </div>
+
+      <div className="tier-board" aria-label="补充剂证据 Tier 榜单">
+        {tierInfo.map((tier) => {
+          const items = dossiers.filter((item) => item.tier === tier.tier);
+          return (
+            <section className={`tier-row tier-${tier.tier.toLowerCase()}`} key={tier.tier}>
+              <div className="tier-definition">
+                <span>{tier.tier}</span>
+                <div>
+                  <h2>{tier.label}</h2>
+                  <p>{tier.note}</p>
+                </div>
+              </div>
+              <div className="tier-items">
+                {items.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => onSelect(item.id)}
+                    aria-label={`打开 ${item.name} 证据档案`}
+                  >
+                    {item.name}
+                  </button>
+                ))}
+              </div>
+            </section>
+          );
+        })}
+      </div>
+
+      <div className="board-footer">
+        <div>
+          <span>7</span>
+          <p>已建档项目</p>
+        </div>
+        <div>
+          <span>15</span>
+          <p>已整理论文</p>
+        </div>
+        <div>
+          <span>4</span>
+          <p>证据层级</p>
+        </div>
+        <p>
+          当前为框架首版。每次新增论文都应记录检索日期、研究类型、样本、周期、主要结果与局限。
+        </p>
+      </div>
+    </>
+  );
+}
+
+function DossierView({
+  dossier,
+  papers,
+  paperType,
+  onPaperType,
+  onBack,
+}: {
+  dossier: Dossier;
+  papers: Paper[];
+  paperType: "All" | PaperType;
+  onPaperType: (type: "All" | PaperType) => void;
+  onBack: () => void;
+}) {
+  return (
+    <>
+      <button type="button" className="back-link" onClick={onBack}>
+        ← 返回 Tier 总览
+      </button>
+      <div className="dossier-title">
+        <div>
+          <span className={`tier-chip tier-chip-${dossier.tier.toLowerCase()}`}>
+            {dossier.tier}
+          </span>
+          <p>{dossier.english}</p>
+          <h1>{dossier.name}</h1>
+        </div>
+        <span className="review-state">{dossier.status}</span>
+      </div>
+
+      <section className="verdict-block">
+        <span>当前结论</span>
+        <p>{dossier.verdict}</p>
       </section>
 
-      <section className="intro section-shell" id="method">
-        <div className="section-label">
-          <span>方法</span>
-          <i />
-          <small>METHOD / 01</small>
+      <dl className="dossier-facts">
+        <div>
+          <dt>证据位置</dt>
+          <dd>{dossier.tier} · {dossier.tierLabel}</dd>
         </div>
-        <div className="intro-grid">
-          <h2>Blueprint 是线索，<br />不是处方。</h2>
-          <div className="intro-copy">
-            <p>
-              Bryan Johnson 的方案提供了密集的实验样本和公开记录，但个人协议、商业产品与科学共识并不是同一件事。
-              我们采用更保守的顺序：先确认问题，再看人类结局，最后才讨论补充剂。
-            </p>
-            <p className="quote">
-              “改变一个指标”不自动等于“延长健康寿命”。
-            </p>
+        <div>
+          <dt>主要研究目标</dt>
+          <dd>{dossier.target}</dd>
+        </div>
+        <div>
+          <dt>当前论文数</dt>
+          <dd>{dossier.papers.length} 篇</dd>
+        </div>
+      </dl>
+
+      <section className="analysis-grid">
+        <article>
+          <span>01</span>
+          <h2>为什么这样判级</h2>
+          <p>{dossier.why}</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>适用条件</h2>
+          <p>{dossier.condition}</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>风险与未知</h2>
+          <p>{dossier.risk}</p>
+        </article>
+      </section>
+
+      <section className="paper-library">
+        <div className="paper-heading">
+          <div>
+            <p className="section-overline">PAPER LIBRARY</p>
+            <h2>科学依据与数据</h2>
           </div>
+          <span>{papers.length} / {dossier.papers.length} 篇</span>
         </div>
-        <div className="method-steps">
-          {layerDescriptions.map((layer) => (
-            <article key={layer.number}>
-              <span className="step-number">{layer.number}</span>
-              <div>
-                <small>{layer.subtitle}</small>
-                <h3>{layer.title}</h3>
-                <p>{layer.text}</p>
+
+        <div className="paper-filters" role="group" aria-label="按论文类型筛选">
+          {paperTypes.map((type) => (
+            <button
+              type="button"
+              key={type}
+              aria-pressed={paperType === type}
+              onClick={() => onPaperType(type)}
+            >
+              {type === "All" ? "全部" : type}
+            </button>
+          ))}
+        </div>
+
+        <div className="paper-list">
+          {papers.map((paper, index) => (
+            <article className="paper-record" key={paper.id}>
+              <div className="paper-index">
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <strong>{paper.type}</strong>
+                <small>{paper.year}</small>
+              </div>
+              <div className="paper-body">
+                <h3>{paper.title}</h3>
+                <p className="journal">{paper.journal}</p>
+                <dl>
+                  <div>
+                    <dt>样本 / 设计</dt>
+                    <dd>{paper.population}</dd>
+                  </div>
+                  <div>
+                    <dt>周期</dt>
+                    <dd>{paper.duration}</dd>
+                  </div>
+                </dl>
+                <div className="paper-findings">
+                  <div>
+                    <span>主要结果</span>
+                    <p>{paper.result}</p>
+                  </div>
+                  <div>
+                    <span>局限</span>
+                    <p>{paper.limitation}</p>
+                  </div>
+                </div>
+                <a href={paper.url} target="_blank" rel="noreferrer">
+                  在原始来源中查看 <span aria-hidden="true">↗</span>
+                </a>
               </div>
             </article>
           ))}
+          {papers.length === 0 && (
+            <p className="empty-state">当前分类还没有论文记录。</p>
+          )}
         </div>
       </section>
+    </>
+  );
+}
 
-      <section className="evidence-section" id="evidence">
-        <div className="section-shell">
-          <div className="section-label light-label">
-            <span>证据图谱</span>
-            <i />
-            <small>EVIDENCE ATLAS / 02</small>
-          </div>
-          <div className="evidence-heading">
-            <div>
-              <p className="eyebrow">FROM CERTAINTY TO CURIOSITY</p>
-              <h2>先做高确定性的事，<br />再保留实验的好奇心。</h2>
+function MethodView() {
+  const criteria = [
+    ["人体证据", "随机对照试验、系统综述与荟萃分析优先于动物和机制研究"],
+    ["临床相关性", "力量、功能、疾病事件优先于单一生化指标"],
+    ["可重复性", "独立团队、不同人群和更长期研究是否得到相近结果"],
+    ["适用条件", "获益是否仅限缺乏、特定疾病、年龄或处方剂量"],
+    ["安全与成本", "长期安全、药物相互作用、产品质量和机会成本"],
+  ];
+
+  return (
+    <>
+      <div className="page-kicker">
+        <span>METHOD / 02</span>
+        <span>VERSION 0.2</span>
+      </div>
+      <div className="method-page">
+        <p className="section-overline">GRADING METHOD</p>
+        <h1>我们如何给出 Tier</h1>
+        <p className="method-lede">
+          Tier 是可被新证据推翻的编辑判断。它不表示药物剂量，也不代替个人医疗决策。
+        </p>
+        <div className="criteria-list">
+          {criteria.map(([name, description], index) => (
+            <div key={name}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <h2>{name}</h2>
+              <p>{description}</p>
             </div>
-            <p>
-              优先级是我们的证据综合判断，不是医学评分。点击筛选，再展开每一项查看理由、行动建议与风险。
-            </p>
-          </div>
-
-          <div className="filter-bar" role="group" aria-label="按方案层级筛选">
-            {filters.map((item) => (
-              <button
-                type="button"
-                key={item.id}
-                aria-pressed={filter === item.id}
-                onClick={() => setFilter(item.id)}
-              >
-                <span>{item.label}</span>
-                <small>{item.caption}</small>
-              </button>
-            ))}
-          </div>
-
-          <p className="result-count" aria-live="polite">
-            当前显示 {visibleItems.length} 项
-          </p>
-
-          <div className="evidence-list">
-            {visibleItems.map((item, index) => (
-              <details className="evidence-card" key={item.id}>
-                <summary>
-                  <span className="specimen-number">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <span className="evidence-title">
-                    <small>{item.english}</small>
-                    <strong>{item.name}</strong>
-                    <em>{item.oneLine}</em>
-                  </span>
-                  <span className="evidence-meta">
-                    <span className={`evidence-badge ${item.evidenceTone}`}>
-                      {item.evidence}
-                    </span>
-                    <span>{item.layerLabel}</span>
-                  </span>
-                  <span
-                    className="priority-dots"
-                    aria-label={`行动优先级 ${item.priority} / 5`}
-                  >
-                    {[1, 2, 3, 4, 5].map((dot) => (
-                      <i
-                        key={dot}
-                        className={dot <= item.priority ? "active" : ""}
-                      />
-                    ))}
-                  </span>
-                  <span className="expand-mark" aria-hidden="true">＋</span>
-                </summary>
-                <div className="evidence-detail">
-                  <div>
-                    <small>为什么这样判断</small>
-                    <p>{item.rationale}</p>
-                  </div>
-                  <div>
-                    <small>建议行动</small>
-                    <p>{item.action}</p>
-                  </div>
-                  <div>
-                    <small>留意风险</small>
-                    <p>{item.caution}</p>
-                  </div>
-                  <a href={item.source} target="_blank" rel="noreferrer">
-                    阅读来源 · {item.sourceLabel} <span aria-hidden="true">↗</span>
-                  </a>
-                </div>
-              </details>
-            ))}
-          </div>
+          ))}
         </div>
-      </section>
-
-      <section className="practice section-shell" id="practice">
-        <div className="section-label">
-          <span>执行框架</span>
-          <i />
-          <small>PRACTICE / 03</small>
-        </div>
-        <div className="practice-grid">
-          <div className="practice-copy">
-            <p className="eyebrow">A SAFER N-OF-1</p>
-            <h2>让每一次尝试，<br />都有开始和结束。</h2>
-            <p>
-              实验性补剂最容易叠加、最难归因。一次只改变一个变量，预先定义观察周期和停用条件，比一口气复制整套 Blueprint 更有价值。
-            </p>
-          </div>
-          <ol className="timeline">
-            <li>
-              <span>0</span>
-              <div>
-                <small>BASELINE · 开始前</small>
-                <h3>先确认真正的问题</h3>
-                <p>记录训练、饮食、睡眠、血压、血脂和相关症状；没有问题，就不要为了“优化”制造治疗。</p>
-              </div>
-            </li>
-            <li>
-              <span>1</span>
-              <div>
-                <small>ONE CHANGE · 单变量</small>
-                <h3>一次只加入一项</h3>
-                <p>写下产品、剂量、时间、目的与停止标准，避免同时加入多种补剂后无法判断效果。</p>
-              </div>
-            </li>
-            <li>
-              <span>2</span>
-              <div>
-                <small>8–12 WEEKS · 复盘</small>
-                <h3>看功能，不迷信分数</h3>
-                <p>优先看力量、耐力、睡眠、症状与医生认可的指标，而不是只追逐“生物年龄”或单一生化变化。</p>
-              </div>
-            </li>
-            <li>
-              <span>3</span>
-              <div>
-                <small>STOP / KEEP · 决策</small>
-                <h3>无明确收益就停</h3>
-                <p>长期方案必须证明自己值得持续承担成本、复杂度与潜在风险。</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section className="safety">
-        <div className="safety-art" aria-hidden="true">
-          <span>✦</span>
-        </div>
-        <div>
-          <p className="eyebrow">A NOTE ON SAFETY</p>
-          <h2>这是一份研究笔记，<br />不是个人医疗处方。</h2>
+        <section className="source-policy">
+          <h2>来源政策</h2>
           <p>
-            肾病、肝病、房颤、抗凝治疗、肿瘤治疗、妊娠或准备手术时，蛋白质、肌酸、鱼油、Q10
-            及实验性补剂都需要单独评估。出现不适应停止并寻求专业医疗建议。
+            Bryan Johnson 与 Blueprint 用于发现候选干预，不作为疗效证据。结论优先链接 PubMed、
+            期刊全文或权威指南；每条记录必须同时写出结果与局限。
           </p>
-        </div>
-      </section>
-
-      <section className="sources section-shell" id="sources">
-        <div className="section-label">
-          <span>来源</span>
-          <i />
-          <small>SOURCES / 04</small>
-        </div>
-        <div className="sources-grid">
           <div>
-            <p className="eyebrow">PRIMARY REFERENCE</p>
-            <h2>Bryan 的公开资料，<br />作为跟踪入口。</h2>
-            <p>
-              他的内容用于发现值得研究的问题；每项健康结论仍单独核对人体试验、系统综述与风险。
-            </p>
+            <a href="https://www.youtube.com/@BryanJohnson" target="_blank" rel="noreferrer">
+              Bryan Johnson YouTube ↗
+            </a>
+            <a href="https://bryanjohnson.komi.io/" target="_blank" rel="noreferrer">
+              Bryan Johnson 资料入口 ↗
+            </a>
           </div>
-          <div className="source-links">
-            {sourceLinks.map((source, index) => (
-              <a
-                key={source.href}
-                href={source.href}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{source.label}</strong>
-                <i aria-hidden="true">↗</i>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
+    </>
+  );
+}
 
-      <footer>
-        <div>
-          <span className="brand-mark" aria-hidden="true">✦</span>
-          <p>
-            LONGEVITY FIELD NOTES
-            <small>以证据理解健康寿命</small>
-          </p>
+function ChangelogView() {
+  return (
+    <>
+      <div className="page-kicker">
+        <span>CHANGELOG / 03</span>
+        <span>RESEARCH LOG</span>
+      </div>
+      <div className="changelog-page">
+        <p className="section-overline">CHANGELOG</p>
+        <h1>研究更新记录</h1>
+        <div className="change-entry">
+          <time>2026-07-20</time>
+          <div>
+            <h2>v0.2 · 从展示页改为证据资料库</h2>
+            <ul>
+              <li>建立 T1–T4 补充剂证据榜单。</li>
+              <li>建立 7 个项目档案与 15 条论文记录。</li>
+              <li>每篇论文补充研究类型、样本、周期、结果和局限。</li>
+              <li>把 Bryan Johnson 的公开内容降级为研究线索，不再作为页面叙事中心。</li>
+            </ul>
+          </div>
         </div>
-        <p>首版资料核对：2026-07-20</p>
-        <a href="#top">回到顶部 ↑</a>
-      </footer>
-    </main>
+        <div className="next-research">
+          <span>下一批研究</span>
+          <p>维生素 D、镁、蛋白质补充、牛磺酸、尿石素 A，以及“行为基础证据库”。</p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function ResearchRail({
+  selectedId,
+  screen,
+  onBoard,
+  onSelect,
+  onScreen,
+}: {
+  selectedId: string | null;
+  screen: Screen;
+  onBoard: () => void;
+  onSelect: (id: string) => void;
+  onScreen: (screen: Screen) => void;
+}) {
+  return (
+    <aside className="research-rail" aria-label="研究导航">
+      <div className="rail-heading">
+        <span>研究导航</span>
+        <small>RESEARCH INDEX</small>
+      </div>
+      <button
+        type="button"
+        className="rail-home"
+        aria-current={screen === "board" && !selectedId ? "page" : undefined}
+        onClick={onBoard}
+      >
+        <span>⌂</span>
+        Tier 总览
+      </button>
+
+      <nav>
+        {tierInfo.map((tier) => (
+          <div className="rail-tier" key={tier.tier}>
+            <div>
+              <strong>{tier.tier}</strong>
+              <span>{tier.label.split(" / ")[0]}</span>
+            </div>
+            {dossiers
+              .filter((item) => item.tier === tier.tier)
+              .map((item) => (
+                <button
+                  type="button"
+                  key={item.id}
+                  aria-current={selectedId === item.id ? "page" : undefined}
+                  onClick={() => onSelect(item.id)}
+                >
+                  <span>{item.name}</span>
+                  <small>{item.papers.length}</small>
+                </button>
+              ))}
+          </div>
+        ))}
+      </nav>
+
+      <div className="rail-secondary">
+        <button
+          type="button"
+          aria-current={screen === "method" ? "page" : undefined}
+          onClick={() => onScreen("method")}
+        >
+          判级方法
+        </button>
+        <button
+          type="button"
+          aria-current={screen === "changelog" ? "page" : undefined}
+          onClick={() => onScreen("changelog")}
+        >
+          更新记录
+        </button>
+      </div>
+      <p className="rail-disclaimer">
+        研究笔记，不构成个人医疗建议。
+      </p>
+    </aside>
   );
 }
