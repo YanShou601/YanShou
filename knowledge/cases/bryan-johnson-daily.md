@@ -181,10 +181,154 @@ Bryan 提出了一个很实用的心理框架：
 - [protocol.bryanjohnson.com](https://protocol.bryanjohnson.com/)（2026-07-20 归档）
 - 本地归档：work/references/bryan-johnson/2026-07-20-current-protocol.html、work/references/bryan-johnson/2026-07-20-protocol-site.html
 
+## 每日食谱详情
+
+### 营养宏观
+
+| 项目 | 数值 |
+|---|---|
+| 总热量 | ~2,250 kcal（约 10% 热量限制） |
+| 蛋白质 | ~130 g（~25%） |
+| 碳水 | ~206 g（~35%） |
+| 脂肪 | ~101 g（~40%） |
+
+### 第一餐：Super Veggie（~07:00）
+
+Bryan 每天必吃的蔬菜组合，蒸或轻炒：
+
+| 食材 | 说明 |
+|---|---|
+| 黑扁豆（Black lentils） | 植物蛋白 + 纤维 + 铁 |
+| 西兰花（Broccoli） | 萝卜硫素前体 |
+| 花椰菜（Cauliflower） | 十字花科 |
+| 白蘑菇 + 香菇（Mushrooms） | 麦角硫因来源 |
+| 大蒜（Garlic） | 大蒜素 |
+| 生姜（Ginger） | 抗炎 |
+| 特级初榨橄榄油（EVOO） | 多酚、单不饱和脂肪 |
+| 姜黄（Turmeric） | 姜黄素 |
+| 孜然（Cumin） | 调味 |
+
+### 第二餐：Nutty Pudding（~09:00）
+
+坚果浆果碗，不加热：
+
+| 食材 | 说明 |
+|---|---|
+| 澳洲坚果奶（Macadamia nut milk） | 基底，无糖 |
+| 蓝莓（Blueberries） | 花青素 |
+| 覆盆子（Raspberries） | 多酚 |
+| 草莓（Strawberries） | 维生素 C |
+| 奇亚籽（Chia seeds） | Omega-3 + 纤维 |
+| 亚麻籽粉（Ground flaxseed） | 木酚素 |
+| 核桃（Walnuts） | α-亚麻酸 |
+| 杏仁酱（Almond butter） | 维生素 E |
+| 肉桂（Cinnamon） | 血糖调节 |
+
+### 第三餐：植物正餐（~11:00）
+
+每天变化，典型组合：
+
+- 红薯 / 南瓜（复合碳水）
+- 豆类（鹰嘴豆、黑豆、扁豆）
+- 大量蔬菜（菠菜、羽衣甘蓝、番茄、甜椒）
+- 牛油果（单不饱和脂肪）
+- 全谷物（藜麦、糙米）
+- 坚果和种子
+
+### 饮食原则
+
+- **"每一卡路里都必须为它的存在而战"**——营养密度优先
+- 几乎全植物性（唯一例外：胶原蛋白肽）
+- 不吃加工食品、精制糖、油炸食品
+- 不喝酒、不抽烟、不 vaping
+- 下午 2 点后不摄入咖啡因
+- 不让大脑替自己做吃的决定——靠系统，不靠意志力
+
+## 训练详情
+
+### 每周训练结构
+
+| 类型 | 时间 | 说明 |
+|---|---|---|
+| Zone 2 有氧 | ~150 分钟/周 | 可以正常说话的强度（快走、骑车、游泳） |
+| 高强度间歇（HIIT） | ~75 分钟/周 | 无法说话的强度 |
+| 力量训练 | 每天 | 复合动作为主 |
+| 柔韧性 | 每天 | 拉伸、瑜伽动作 |
+| 平衡 | 每天 | 单腿站立、平衡板 |
+
+### 训练原则
+
+1. **避免受伤**——受伤比不练更糟糕，宁可保守
+2. **每天练，不给自己选择权**——像刷牙一样成为习惯
+3. **四种能力全覆盖**——力量、有氧、柔韧、平衡缺一不可
+4. **每餐后活动 5–10 分钟**——每坐 30 分钟就起来动一动
+5. 每周总计约 **6 小时**
+
+### 典型训练动作（公开视频和协议中出现过的）
+
+**力量：**
+- 深蹲（Squat）
+- 硬拉（Deadlift）
+- 卧推 / 哑铃推胸
+- 划船（杠铃 / 哑铃）
+- 肩推
+- 引体向上 / 下拉
+- 弓步蹲
+- 平板支撑及变体
+
+**有氧：**
+- 跑步（Zone 2 为主）
+- 骑车
+- 游泳
+- 快走
+
+**柔韧 + 平衡：**
+- 各种静态和动态拉伸
+- 单腿站立
+- 瑜伽动作
+- 泡沫轴放松
+
+## 皮肤护理
+
+| 步骤 | 产品/方法 | 频率 |
+|---|---|---|
+| 洁面 | Blueprint Gentle Cleanser | 早晚各一次 |
+| 精华 | Blueprint Facial Serum（肽基） | 早晚 |
+| 保湿 | Blueprint Moisturizer | 早晚 |
+| 防晒 | SPF 防晒 + UV 防护伞 + UV 贴膜车窗（阻隔 99% UV） | 每天 |
+| 红光疗法 | 全身红光（Red Light Therapy） | 每天 |
+
+Bryan 公开表示：通过上述护理，他的皮肤年龄从 64 岁改善到 36 岁（相当于逆转 9 年）。
+
+## 头发护理
+
+| 步骤 | 产品/方法 | 频率 |
+|---|---|---|
+| 洗发 | Blueprint Peptide Shampoo（头皮护理） | 每天 |
+| 精华 | Blueprint Peptide Hair Serum | 每天 |
+| 激光帽 | Blueprint 302 Laser Cap（655 nm） | 每天 6 分钟 |
+| 外用 | 7% 米诺地尔 + 复方（处方） | 每天 |
+| 口服 | 米诺地尔 5 mg（处方，从 2.5 mg 起步） | 每天 |
+
+## 牙齿护理
+
+| 步骤 | 说明 | 频率 |
+|---|---|---|
+| 刷牙 + 牙线 | 基础清洁 | 每天 |
+| 牙科清洁 | 专业洁牙 + 检查 | 每年至少 2 次 |
+| 磨牙护具 | SomnoDent Bruxism Device | 睡觉时佩戴 |
+
+Bryan 提到使用 SomnoDent 后，磨牙症（Bruxism）第一次停止了。
+
+## 来源
+
+- [Bryan Johnson's Protocol（Blueprint 官方）](https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-protocol)（2026-07-20 归档）
+- [protocol.bryanjohnson.com](https://protocol.bryanjohnson.com/)（2026-07-20 归档）
+- Bryan Johnson YouTube 频道公开视频
+- 本地归档：work/references/bryan-johnson/
 ## 待补
 
 - [ ] 搜集 Bryan 的 X/Twitter 近期帖子中的方案更新
-- [ ] 补充他的具体训练动作和分组
-- [ ] 补充他的 Super Veggie 和 Nutty Pudding 完整食谱
-- [ ] 补充他的皮肤护理、头发护理详细流程
 - [ ] 跟踪他的 YouTube 视频中的最新变化
+- [ ] 补充 Super Veggie 和 Nutty Pudding 的精确克数（当前为食材列表）
+
