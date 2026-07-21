@@ -46,6 +46,7 @@ export default defineConfig({
         text: "开始",
         items: [
           { text: "知识库首页", link: "/" },
+          { text: "每日方案", link: "/daily-protocol" },
           { text: "训练计划", link: "/training-plan" },
           { text: "维护说明", link: "/README" },
         ],
@@ -277,6 +278,7 @@ export default defineConfig({
     },
   },
 });
+
 
 
 
