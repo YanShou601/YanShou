@@ -1,7 +1,7 @@
 id,name_zh,name_en,category,bryan_status,evidence_status,tier,review_priority,notes
 omega3,DHA/EPA/Omega-3,Omega-3 fatty acids,脂肪酸,current-explicit,reviewed,T1,maintain,适用性依赖饮食摄入和心血管风险
 creatine,肌酸一水合物,Creatine monohydrate,运动营养,current-explicit,reviewed,T1,maintain,主要证据在力量训练和肌肉功能
-vitamin-d3,维生素D3,Vitamin D3,维生素,current-blend,reviewed,T2,maintain,缺乏与特定人群有价值一般健康人不支持超DRI常规补充
+vitamin-d3,维生素D3,Vitamin D3,维生素,current-blend,reviewed,T2,maintain,缺乏与特定人群有价值；VITAL自身免疫复合结局有信号但不足以形成家族史高剂量预防方案
 vitamin-k2,维生素K2,Vitamin K2,维生素,unverified,candidate,pending,backlog,需核对当前配方及独立临床结局
 vitamin-c,维生素C,Vitamin C,维生素,current-blend,candidate,pending,backlog,区分营养充足与缺乏情境
 b-complex,B族复合维生素,B-complex vitamins,维生素,current-blend,candidate,pending,backlog,复方不能作为单一干预评估

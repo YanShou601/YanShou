@@ -43,6 +43,9 @@
 | Edson Brandão 2026 日常方案转载 | https://internewscast.com/health/at-58-i-am-often-mistaken-for-someone-in-their-20s-heres-my-simple-surgery-free-approach-to-youthful-aging/ | `work/references/edson-brandao/2026-07-21-internewscast-2026-routine.html` | 147820 | `4dc3ca2ace2b49cacc5bd96887c5d89dc555075991aaff621235e0af78bbd6f4` |
 | Edson Brandão《Young After 40》商业产品页 | https://hotmart.com/en/marketplace/products/young-after-40-the-definitive-guide-to-stay-younger-and-healthier/H39631226N | `work/references/edson-brandao/2026-07-21-hotmart-young-after-40.html` | 83106 | `0c7847ba1c133d8c352134e46d52490218537a596eef16c7ab42082fbab854e1` |
 | Edson Brandão 案例科学背景 4 条 PubMed 记录 | NCBI E-utilities 批量导出（PMID 31105044、23732711、40397877、33865376） | `work/references/edson-brandao/2026-07-21-scientific-context-pubmed.xml` | 75505 | `f2aa988f0ed87a70e28336c096699ba4fb9095c0dfe5ab190472a35811502485` |
+| VITAL 维生素 D 与自身免疫病全文 | NCBI PMC E-utilities（PMC8791065 / PMID 35082139） | `work/references/vitamin-d-autoimmune/2026-07-21-vital-autoimmune-2022-pmc.xml` | 126219 | `c5684cc38f3f4d97bb28371522b5b520e8fba68f73ffcb4605c7d154d716997a` |
+| VITAL 自身免疫病停用后随访全文 | NCBI PMC E-utilities（PMC11565399 / PMID 38272846） | `work/references/vitamin-d-autoimmune/2026-07-21-vital-autoimmune-followup-2024-pmc.xml` | 130705 | `a0aabe4967749cfdd041cb898cc17e9f24cb96a1e86edf9a540e2ff94bf26202` |
+| 维生素 D 免疫机制与荟萃分析 3 条 PubMed 记录 | NCBI E-utilities 批量导出（PMID 31550254、26277548、39717776） | `work/references/vitamin-d-autoimmune/2026-07-21-vitamin-d-immune-supporting-pubmed.xml` | 92428 | `892f8c8e5aea597123d8f68b3cd3827410cb0d1f640c41711b6075ced018538c` |
 
 Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时间 `2026-07-19T01:20:09Z`。
 
@@ -60,6 +63,7 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 |---|---|---|---|
 | DHA / EPA / Omega-3 品牌与产品 | 2026-07-20 | [Omega-3 产品质量来源快照](omega3-product-sources-2026-07-20.md) | 官方产品页、IFOS、NSF、iTested、Blueprint 与 COA |
 | NMN/NR、亚精胺、PQQ、Ca-AKG | 2026-07-20 | [前沿长寿候选来源批次](frontier-candidates-sources-2026-07-20.md) | PubMed、PMC 与 ClinicalTrials.gov；商业采用不作疗效证据 |
+| 维生素 D 与自身免疫病 | 2026-07-21 | [VITAL 与免疫证据来源批次](vitamin-d-autoimmune-sources-2026-07-21.md) | 随机试验、停用后随访、Treg 机制、官方剂量与 K2 边界 |
 
 ## 已登记但暂未取得原始快照
 
@@ -69,6 +73,7 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 |---|---|---|
 | Omega-3 | https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/ | 摄入来源、心血管证据、剂量与安全边界 |
 | Vitamin D | https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/ | 缺乏定义、适用人群、上限与相互作用 |
+| Vitamin K | https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/ | K2/血管钙化证据边界与华法林相互作用 |
 | Magnesium | https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/ | 缺乏风险、剂型、上限和肾功能风险 |
 | 运动补充剂 | https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/ | 肌酸运动表现与安全概览 |
 | Niacin / 维生素 B3 | https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/ | NAD⁺ 合成、推荐摄入、食物、糙皮病与高剂量风险 |

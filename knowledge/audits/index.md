@@ -6,6 +6,7 @@
 
 | 干预 | 框架 | 状态 | 结果 | 文件 |
 |---|---|---|---|---|
+| 维生素 D3 | `yanshou-ai4l-0.1` | `partial` | 40 PASS / 7 PARTIAL / 0 FAIL | [2026-07-21 审计](vitamin-d3-2026-07-21.md) |
 | NMN / NR | `yanshou-ai4l-0.1` | `partial` | 38 PASS / 8 PARTIAL / 1 FAIL | [2026-07-20 审计](nmn-nr-2026-07-20.md) |
 | 亚精胺 | `yanshou-ai4l-0.1` | `partial` | 38 PASS / 7 PARTIAL / 2 FAIL | [2026-07-20 更新审计](spermidine-2026-07-20.md) |
 | PQQ | `yanshou-ai4l-0.1` | `partial` | 35 PASS / 10 PARTIAL / 2 FAIL | [2026-07-20 审计](pqq-2026-07-20.md) |

@@ -17,6 +17,7 @@
 | [Edson Brandão 案例](cases/edson-brandao.md) | 运动、少加工饮食、皮肤技巧、封嘴睡觉与商业关系核查 |
 | [现有论文库](papers/existing-evidence-library.md) | 当前 28 条论文记录 |
 | [D / 镁 / 纤维论文批次](papers/research-batch-2026-07-20-vitamin-d-magnesium-fiber.md) | 新增 9 条定向证据记录 |
+| [维生素 D 与自身免疫病](papers/vitamin-d-autoimmune-2026-07-21.md) | VITAL 22%/39%、停用后随访、Treg 机制与高剂量说法核查 |
 | [Bryan 当前方案](sources/bryan-johnson-current-protocol.md) | 当前使用、复方、产品和历史讨论的边界 |
 | [来源清单](sources/source-manifest.md) | 原始快照、URL、日期和 SHA-256 |
 | [证据判级](methods/evidence-grading.md) | T1–T4 与 pending 的定义 |
@@ -30,11 +31,11 @@
 
 - 已评审补剂：12 项；
 - 待评审候选：41 项；
-- 已登记论文记录：28 条；
+- 已登记论文记录：主库 28 条，定向评审批次 14 条；
 - 已建立人物案例：4 个入口，陈传多、吕良伟和 Edson Brandão 完成第一轮逐条核查；
 - 下一批：烟酸、烟酰胺、直接口服/静脉 NAD⁺，以及牛磺酸、NAC；
 - 网页定位：只做 Markdown 文档浏览和全文检索。
-- 质量流程：已接入 `创建 → 独立审计 → 修正 → 再审计`，四项前沿候选已有独立审计。
+- 质量流程：已接入 `创建 → 独立审计 → 修正 → 再审计`，四项前沿候选与维生素 D3 已有独立审计。
 
 ## 基本原则
 

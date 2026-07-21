@@ -112,6 +112,10 @@ export default defineConfig({
             text: "D/镁/纤维论文批次",
             link: "/papers/research-batch-2026-07-20-vitamin-d-magnesium-fiber",
           },
+          {
+            text: "维生素D与自身免疫病",
+            link: "/papers/vitamin-d-autoimmune-2026-07-21",
+          },
           { text: "Bryan 当前方案", link: "/sources/bryan-johnson-current-protocol" },
           { text: "用户候选清单", link: "/sources/user-candidate-list-2026-07-20" },
           { text: "原始快照清单", link: "/sources/source-manifest" },
@@ -140,6 +144,10 @@ export default defineConfig({
             text: "Edson Brandão 案例来源",
             link: "/sources/edson-brandao-sources-2026-07-21",
           },
+          {
+            text: "维生素D免疫来源",
+            link: "/sources/vitamin-d-autoimmune-sources-2026-07-21",
+          },
         ],
       },
       {
@@ -147,6 +155,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: "审计索引", link: "/audits/" },
+          { text: "维生素 D3 审计", link: "/audits/vitamin-d3-2026-07-21" },
           { text: "NMN / NR 审计", link: "/audits/nmn-nr-2026-07-20" },
           { text: "亚精胺审计", link: "/audits/spermidine-2026-07-20" },
           { text: "PQQ 审计", link: "/audits/pqq-2026-07-20" },
@@ -179,6 +188,10 @@ export default defineConfig({
           {
             text: "D/镁/纤维评审",
             link: "/research-log/2026-07-20-vitamin-d-magnesium-fiber-review",
+          },
+          {
+            text: "维生素D与自身免疫病",
+            link: "/research-log/2026-07-21-vitamin-d-autoimmune-update",
           },
           {
             text: "普通读者档案格式",
