@@ -49,6 +49,7 @@ export default defineConfig({
           { text: "每日方案", link: "/daily-protocol" },
           { text: "饮食记录", link: "/diet-log" },
           { text: "差距分析与行动计划", link: "/gap-analysis" },
+          { text: "我 vs Bryan 完整对比", link: "/my-vs-bryan-comparison" },
           { text: "训练计划", link: "/training-plan" },
           { text: "维护说明", link: "/README" },
         ],
@@ -283,6 +284,7 @@ export default defineConfig({
     },
   },
 });
+
 
 
 
