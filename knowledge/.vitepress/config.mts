@@ -64,6 +64,7 @@ export default defineConfig({
         items: [
           { text: "主题索引", link: "/topics/" },
           { text: "NAD⁺ 代谢轴", link: "/topics/nad-pathway" },
+          { text: "睡前不进食原理", link: "/topics/fasting-before-sleep" },
         ],
       },
       {
@@ -279,6 +280,7 @@ export default defineConfig({
     },
   },
 });
+
 
 
 
