@@ -76,6 +76,7 @@ export default defineConfig({
           { text: "陈传多", link: "/cases/chuando-tan" },
           { text: "吕良伟", link: "/cases/ray-lui" },
           { text: "Edson Brandão", link: "/cases/edson-brandao" },
+          { text: "Bryan 的一天与一周", link: "/cases/bryan-johnson-daily" },
           { text: "Bryan 当前方案", link: "/sources/bryan-johnson-current-protocol" },
         ],
       },
@@ -141,6 +142,7 @@ export default defineConfig({
             text: "维生素D与自身免疫病",
             link: "/papers/vitamin-d-autoimmune-2026-07-21",
           },
+          { text: "Bryan 的一天与一周", link: "/cases/bryan-johnson-daily" },
           { text: "Bryan 当前方案", link: "/sources/bryan-johnson-current-protocol" },
           { text: "用户候选清单", link: "/sources/user-candidate-list-2026-07-20" },
           { text: "原始快照清单", link: "/sources/source-manifest" },
@@ -281,6 +283,7 @@ export default defineConfig({
     },
   },
 });
+
 
 
 
