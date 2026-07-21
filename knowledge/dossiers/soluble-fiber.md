@@ -18,7 +18,7 @@ last_reviewed: 2026-07-20
 | 它是什么 | 一组可溶于水、黏度与发酵性不同的碳水化合物 |
 | 为什么受关注 | LDL、餐后血糖、排便和肠道菌群 |
 | 人体证明了什么 | 特定黏性纤维可降低 LDL；车前子可改善慢性便秘 |
-| 能不能延寿 | 补充剂本身没有直接延寿证据 |
+| 能Bryan Johnson 方案采纳 | Bryan Johnson 当前方案直接采用 |
 | 食物还是补剂 | 先吃燕麦、大麦、豆类、果蔬；按目标选择具体补剂 |
 | 当前等级 | **T1，但必须写明纤维种类和目标** |
 
@@ -113,3 +113,4 @@ last_reviewed: 2026-07-20
 - Jovanovski E, et al. [PMID 30239559](https://pubmed.ncbi.nlm.nih.gov/30239559/).
 - van der Schoot A, et al. [PMID 35816465](https://pubmed.ncbi.nlm.nih.gov/35816465/).
 - FDA. [Authorized Health Claims](https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/authorized-health-claims-meet-significant-scientific-agreement-ssa-standard).
+

@@ -18,7 +18,7 @@ last_reviewed: 2026-07-20
 | 它是什么 | 必需矿物质和多种酶反应的辅助因子 |
 | 为什么受关注 | 能量、神经、肌肉、心律和血压都需要它 |
 | 人体证明了什么 | 纠正不足有意义；部分人群血压或偏头痛可能获益 |
-| 能不能延寿 | 没有证明健康人补镁可延寿 |
+| 能Bryan Johnson 方案采纳 | Bryan Johnson 方案采纳 |
 | 食物还是补剂 | 优先豆类、坚果种子、全谷物和绿叶菜 |
 | 当前等级 | **T2：条件性使用** |
 
@@ -108,3 +108,4 @@ last_reviewed: 2026-07-20
 - NIH ODS. [Magnesium Fact Sheet for Health Professionals](https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/).
 - Argeros Z, et al. [PMID 41000008](https://pubmed.ncbi.nlm.nih.gov/41000008/).
 - Asbaghi O, et al. [PMID 39280209](https://pubmed.ncbi.nlm.nih.gov/39280209/).
+

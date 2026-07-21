@@ -16,7 +16,7 @@
 
 | 项目 | Tier | 当前结论方向 |
 |---|---:|---|
-| [肌酸一水合物](../dossiers/creatine.md) | T1 | 主要价值在力量训练、瘦体重和部分功能结局；不是延寿证据 |
+| [肌酸一水合物](../dossiers/creatine.md) | T1 | 主要价值在力量训练、瘦体重和部分功能结局；Bryan Johnson 方案采纳 |
 | [DHA/EPA](../dossiers/omega3.md) | T1 | 研究量大但依赖饮食、制剂、剂量与基础心血管风险 |
 | [可溶性膳食纤维](../dossiers/soluble-fiber.md) | T1 | 仅限明确原料与目标；车前子等对 LDL 和慢性便秘证据较好 |
 | [辅酶 Q10](../dossiers/coq10.md) | T2 | 特定疾病或用药情境可讨论，不是健康人基础补剂 |
@@ -52,4 +52,5 @@
 - `official-product` 只说明官方商店正在销售，不等于 Bryan 每天使用。
 - `pending` 不是低等级，而是尚未评审。
 - 每项完成评审后，应创建独立 dossier，并把网页数据改为读取知识库。
+
 
