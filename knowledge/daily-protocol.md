@@ -101,7 +101,7 @@ last_updated: 2026-07-21
 | PS + 神经酸 | Bryan 方案中神经酸状态为 unverified | 莱特维健含磷脂酰丝氨酸 + 顺-15-二十四碳烯酸 |
 | Omega-3 | Bryan 当前使用 Blueprint Omega-3 | 我用 Life Extension Super Omega-3（P1 梯队） |
 | 甲钴胺 B12 | Bryan 方案含 B 族复合 | 甲钴胺是活性 B12 形式，0.5 mg/日 |
-| 维生素 C + E + 烟酰胺 | Bryan 方案含维生素 C（current-blend） | 若特兰德咀嚼片，新购 |
+| 维生素 C + E + 烟酰胺 | Bryan 方案含维生素 C（current-blend） | 若特兰德咀嚼片，✅ 执行中 |
 | 猪肝（每周六） | 天然食物来源 | 提供 B12、铁、维生素 A |
 | 桑葚汁 | 天然食物来源 | 花青素、多酚 |
 
@@ -113,4 +113,5 @@ last_updated: 2026-07-21
 - [ ] 考虑加入肌酸（5 g/日，配合力量训练）
 - [ ] 考虑加入镁（100–200 mg 元素镁，晚上服用）
 - [ ] 考虑加入维生素 D3（先测 25(OH)D 水平）
+
 
