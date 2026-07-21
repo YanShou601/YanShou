@@ -37,6 +37,12 @@
 | Nobel Prize 2016 自噬官方说明 | https://www.nobelprize.org/prizes/medicine/2016/press-release/ | `work/references/ray-lui/2026-07-21-nobel-autophagy-press-release.html` | 176661 | `24caa76a871ccfd4890a645d403e0741c105f8fd044483cddcfd8b527559c91b` |
 | 限时进食、自噬与老年蛋白 4 条 PubMed 记录 | NCBI E-utilities 批量导出（PMID 40345145、38357669、34475325、38830547） | `work/references/ray-lui/2026-07-21-fasting-protein-pubmed.xml` | 90900 | `2bfacbe5916afa195cd8de1f12a2b7c89ba4cb4b6646f0aa98ef4ae2cc1e3f06` |
 | 甲基化时钟个人应用局限全文 | NCBI PMC `PMC12714307` / PMID `41403206` | `work/references/ray-lui/2026-07-21-epigenetic-clock-limits.xml` | 213882 | `210a568cb4f1116ee8083dcfab06dd09190ef15c0a51551c9c0c2e56d0b10ae1` |
+| Edson Brandão Voyage Michigan 2025 自述式采访 | https://voyagemichigan.com/interview/check-out-edson-brandaos-story/ | `work/references/edson-brandao/2026-07-21-voyage-michigan-interview.html` | 223095 | `3db546b0cb5cd0ff853c5f36d2feb76bea53446ba1d45f53f56665127247909b` |
+| Edson Brandão El Tiempo 2020 人物概览 | https://www.eltiempo.com/cultura/gente/edson-brandao-influencer-de-53-anos-que-parece-20-anos-mas-joven-539846 | `work/references/edson-brandao/2026-07-21-el-tiempo-2020-profile.html` | 589325 | `779256de68446a6afbcdffe767d9da14a5e45b42503cdee651c4f6aa4e3a09ba` |
+| Edson Brandão Caters 2024 图片社稿件 | https://www.magazinefeatures.co.za/event/en/1/1918268/PEOPLE%2BDON%E2%80%99T%2BBELIEVE%2BMY%2BREAL%2BAGE | `work/references/edson-brandao/2026-07-21-caters-2024-photo-story.html` | 139665 | `e4da59046f57e7132042fc807d139199820549d5de6a6737b02ce57c6e8d48a6` |
+| Edson Brandão 2026 日常方案转载 | https://internewscast.com/health/at-58-i-am-often-mistaken-for-someone-in-their-20s-heres-my-simple-surgery-free-approach-to-youthful-aging/ | `work/references/edson-brandao/2026-07-21-internewscast-2026-routine.html` | 147820 | `4dc3ca2ace2b49cacc5bd96887c5d89dc555075991aaff621235e0af78bbd6f4` |
+| Edson Brandão《Young After 40》商业产品页 | https://hotmart.com/en/marketplace/products/young-after-40-the-definitive-guide-to-stay-younger-and-healthier/H39631226N | `work/references/edson-brandao/2026-07-21-hotmart-young-after-40.html` | 83106 | `0c7847ba1c133d8c352134e46d52490218537a596eef16c7ab42082fbab854e1` |
+| Edson Brandão 案例科学背景 4 条 PubMed 记录 | NCBI E-utilities 批量导出（PMID 31105044、23732711、40397877、33865376） | `work/references/edson-brandao/2026-07-21-scientific-context-pubmed.xml` | 75505 | `f2aa988f0ed87a70e28336c096699ba4fb9095c0dfe5ab190472a35811502485` |
 
 Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时间 `2026-07-19T01:20:09Z`。
 
@@ -70,6 +76,8 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 | AHA 膳食胆固醇科学建议 | https://professional.heart.org/en/science-news/dietary-cholesterol-and-cardiovascular-risk/top-things-to-know | 鸡蛋、总体膳食模式、血脂异常与高风险人群边界 |
 | 陈传多 2017 早餐采访转述 | https://lifestyle.inquirer.net/272224/51-year-old-model-photographer-chuando-tan-bares-secrets-youthful-look | 6 个水波蛋、只留 2 个蛋黄的早期版本；自动下载被拒绝 |
 | 吕良伟 2026 年“四层养生法”报道 | https://www.orientaldaily.com.my/news/entertainment/2026/05/28/821733 | 本人近期视频的媒体转述；自动下载返回 520 |
+| Edson Brandão 本人 Instagram | https://www.instagram.com/iamedsonbrandao/ | 由 2025 年本人采访列出；未归档完整帖子历史 |
+| Edson Brandão 2026 年“避开 9 类食品”稿件转载 | https://www.diningandcooking.com/2500208/i-avoid-nine-foods-and-look-30-years-younger-than-my-real-age/ | 已核对检索快照；自动下载 SSL 失败，与其他 2026 稿件属同一来源家族 |
 
 ## 版权与使用
 
