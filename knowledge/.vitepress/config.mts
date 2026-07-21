@@ -98,8 +98,28 @@ export default defineConfig({
         items: [
           { text: "产品档案说明", link: "/products/" },
           {
+            text: "7 种补剂购买指南",
+            link: "/products/buying-guide-7-supplements-2026-07-21",
+          },
+          {
             text: "DHA / EPA 品牌梯队",
             link: "/products/omega3-brand-tiers-2026-07-20",
+          },
+          {
+            text: "肌酸品牌梯队",
+            link: "/products/creatine-brand-tiers-2026-07-21",
+          },
+          {
+            text: "镁品牌梯队",
+            link: "/products/magnesium-brand-tiers-2026-07-21",
+          },
+          {
+            text: "维生素 D3 品牌梯队",
+            link: "/products/vitamin-d3-brand-tiers-2026-07-21",
+          },
+          {
+            text: "NMN / NR 品牌梯队",
+            link: "/products/nmn-nr-brand-tiers-2026-07-21",
           },
         ],
       },
@@ -217,6 +237,10 @@ export default defineConfig({
             text: "Edson Brandão 案例核查",
             link: "/research-log/2026-07-21-edson-brandao-case",
           },
+          {
+            text: "7 种补剂购买指南",
+            link: "/research-log/2026-07-21-buying-guide-7-supplements",
+          },
         ],
       },
       {
@@ -252,3 +276,4 @@ export default defineConfig({
     },
   },
 });
+
