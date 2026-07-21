@@ -64,6 +64,7 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 | DHA / EPA / Omega-3 品牌与产品 | 2026-07-20 | [Omega-3 产品质量来源快照](omega3-product-sources-2026-07-20.md) | 官方产品页、IFOS、NSF、iTested、Blueprint 与 COA |
 | NMN/NR、亚精胺、PQQ、Ca-AKG | 2026-07-20 | [前沿长寿候选来源批次](frontier-candidates-sources-2026-07-20.md) | PubMed、PMC 与 ClinicalTrials.gov；商业采用不作疗效证据 |
 | 维生素 D 与自身免疫病 | 2026-07-21 | [VITAL 与免疫证据来源批次](vitamin-d-autoimmune-sources-2026-07-21.md) | 随机试验、停用后随访、Treg 机制、官方剂量与 K2 边界 |
+| 肌酸、镁、维生素 D3、NMN/NR 产品质量 | 2026-07-21 | NSF 认证目录在线核对 | Thorne 和 Momentous 的 NSF 产品级认证；NOW、Doctor's Best 等 GMP/原料级信息 |
 
 ## 已登记但暂未取得原始快照
 
@@ -87,3 +88,4 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 ## 版权与使用
 
 本地快照仅用于个人研究、版本比较和引用核对。商业网站文案不作为科学证据；Wikipedia 内容遵循其 CC BY-SA 条款；论文全文的使用遵循各自许可。
+
