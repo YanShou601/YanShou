@@ -1,6 +1,6 @@
 # 来源与本地快照清单
 
-最后更新：`2026-07-21`
+最后更新：`2026-07-22`
 时区：`Asia/Shanghai`
 
 ## 已归档
@@ -45,6 +45,9 @@
 | Edson Brandão 案例科学背景 4 条 PubMed 记录 | NCBI E-utilities 批量导出（PMID 31105044、23732711、40397877、33865376） | `work/references/edson-brandao/2026-07-21-scientific-context-pubmed.xml` | 75505 | `f2aa988f0ed87a70e28336c096699ba4fb9095c0dfe5ab190472a35811502485` |
 | VITAL 维生素 D 与自身免疫病全文 | NCBI PMC E-utilities（PMC8791065 / PMID 35082139） | `work/references/vitamin-d-autoimmune/2026-07-21-vital-autoimmune-2022-pmc.xml` | 126219 | `c5684cc38f3f4d97bb28371522b5b520e8fba68f73ffcb4605c7d154d716997a` |
 | VITAL 自身免疫病停用后随访全文 | NCBI PMC E-utilities（PMC11565399 / PMID 38272846） | `work/references/vitamin-d-autoimmune/2026-07-21-vital-autoimmune-followup-2024-pmc.xml` | 130705 | `a0aabe4967749cfdd041cb898cc17e9f24cb96a1e86edf9a540e2ff94bf26202` |
+| Leslie Kenny bio 页（2023-09 Wayback） | https://web.archive.org/web/20230922002228/https://oxfordhealthspan.com/pages/leslie-kenny-bio | `work/references/leslie-kenny/leslie-kenny-bio-2023.html` | — | — |
+| Oxford Healthspan 首页（2021-12 Wayback） | https://web.archive.org/web/20211207064312/https://oxfordhealthspan.com/ | `work/references/leslie-kenny/ohs-home-2021.html` | — | — |
+| Oxford Healthspan About 页（2024-04 Wayback） | https://web.archive.org/web/20240415071715/https://oxfordhealthspan.com/pages/about-oxford-healthspan | `work/references/leslie-kenny/ohs-about-2024.html` | — | — |
 | 维生素 D 免疫机制与荟萃分析 3 条 PubMed 记录 | NCBI E-utilities 批量导出（PMID 31550254、26277548、39717776） | `work/references/vitamin-d-autoimmune/2026-07-21-vitamin-d-immune-supporting-pubmed.xml` | 92428 | `892f8c8e5aea597123d8f68b3cd3827410cb0d1f640c41711b6075ced018538c` |
 
 Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时间 `2026-07-19T01:20:09Z`。
@@ -64,6 +67,7 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 | DHA / EPA / Omega-3 品牌与产品 | 2026-07-20 | [Omega-3 产品质量来源快照](omega3-product-sources-2026-07-20.md) | 官方产品页、IFOS、NSF、iTested、Blueprint 与 COA |
 | NMN/NR、亚精胺、PQQ、Ca-AKG | 2026-07-20 | [前沿长寿候选来源批次](frontier-candidates-sources-2026-07-20.md) | PubMed、PMC 与 ClinicalTrials.gov；商业采用不作疗效证据 |
 | 维生素 D 与自身免疫病 | 2026-07-21 | [VITAL 与免疫证据来源批次](vitamin-d-autoimmune-sources-2026-07-21.md) | 随机试验、停用后随访、Treg 机制、官方剂量与 K2 边界 |
+| Leslie Kenny / Oxford Healthspan 亚精胺案例 | 2026-07-22 | [Leslie Kenny 案例来源批次](leslie-kenny-sources-2026-07-22.md) | 官网 bio Wayback Machine 快照、产品页、中文短视频文案 |
 | 肌酸、镁、维生素 D3、NMN/NR 产品质量 | 2026-07-21 | NSF 认证目录在线核对 | Thorne 和 Momentous 的 NSF 产品级认证；NOW、Doctor's Best 等 GMP/原料级信息 |
 
 ## 已登记但暂未取得原始快照
@@ -83,9 +87,12 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 | 陈传多 2017 早餐采访转述 | https://lifestyle.inquirer.net/272224/51-year-old-model-photographer-chuando-tan-bares-secrets-youthful-look | 6 个水波蛋、只留 2 个蛋黄的早期版本；自动下载被拒绝 |
 | 吕良伟 2026 年“四层养生法”报道 | https://www.orientaldaily.com.my/news/entertainment/2026/05/28/821733 | 本人近期视频的媒体转述；自动下载返回 520 |
 | Edson Brandão 本人 Instagram | https://www.instagram.com/iamedsonbrandao/ | 由 2025 年本人采访列出；未归档完整帖子历史 |
-| Edson Brandão 2026 年“避开 9 类食品”稿件转载 | https://www.diningandcooking.com/2500208/i-avoid-nine-foods-and-look-30-years-younger-than-my-real-age/ | 已核对检索快照；自动下载 SSL 失败，与其他 2026 稿件属同一来源家族 |
+| Edson Brandão 2026 年”避开 9 类食品”稿件转载 | https://www.diningandcooking.com/2500208/i-avoid-nine-foods-and-look-30-years-younger-than-my-real-age/ | 已核对检索快照；自动下载 SSL 失败，与其他 2026 稿件属同一来源家族 |
+| Liu 2026 维 C 抑制 ACSL4 缓解灵长类铁衰老 | https://doi.org/10.1016/j.cmet.2026.02.010 | Cell Metabolism 38(4):673-693.e17；待下载 PDF 全文 |
 
 ## 版权与使用
 
 本地快照仅用于个人研究、版本比较和引用核对。商业网站文案不作为科学证据；Wikipedia 内容遵循其 CC BY-SA 条款；论文全文的使用遵循各自许可。
+
+
 

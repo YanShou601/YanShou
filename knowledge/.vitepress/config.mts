@@ -93,6 +93,7 @@ export default defineConfig({
           { text: "DHA / EPA", link: "/dossiers/omega3" },
           { text: "可溶性膳食纤维", link: "/dossiers/soluble-fiber" },
           { text: "辅酶 Q10", link: "/dossiers/coq10" },
+          { text: "维生素 C", link: "/dossiers/vitamin-c" },
           { text: "维生素 D3", link: "/dossiers/vitamin-d3" },
           { text: "镁", link: "/dossiers/magnesium" },
           { text: "NMN / NR", link: "/dossiers/nmn" },
@@ -145,6 +146,10 @@ export default defineConfig({
           {
             text: "维生素D与自身免疫病",
             link: "/papers/vitamin-d-autoimmune-2026-07-21",
+          },
+          {
+            text: "维C抑制ACSL4铁衰老",
+            link: "/papers/vitamin-c-acsl4-ferroaging-2026",
           },
           { text: "Bryan 的一天与一周", link: "/cases/bryan-johnson-daily" },
           { text: "Bryan 当前方案", link: "/sources/bryan-johnson-current-protocol" },

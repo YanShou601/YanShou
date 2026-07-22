@@ -20,6 +20,7 @@ Tier 是研究优先级，不是购物榜。任何页面都必须明确回答“
 | omega3 | DHA / EPA | T1 | [omega3.md](omega3.md) |
 | soluble-fiber | 可溶性膳食纤维（限定原料与目标） | T1 | [soluble-fiber.md](soluble-fiber.md) |
 | coq10 | 辅酶 Q10 | T2 | [coq10.md](coq10.md) |
+| vitamin-c | 维生素 C | T2 | [vitamin-c.md](vitamin-c.md) |
 | vitamin-d3 | 维生素 D3 | T2 | [vitamin-d3.md](vitamin-d3.md) |
 | magnesium | 镁 | T2 | [magnesium.md](magnesium.md) |
 | nmn | NMN / NR | T3 | [nmn.md](nmn.md) |

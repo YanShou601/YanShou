@@ -157,6 +157,12 @@ audit_date: 2026-07-20
 
 本地 Bryan 当前公开方案快照没有被用作疗效证据。即使人物曾使用或讨论，也只能说明方案历史，不能证明普通人应补充。
 
+## 案例人物：Leslie Kenny（Oxford Healthspan / Primeadine®）
+
+Leslie Kenny 是 Oxford Healthspan 创始人，旗舰产品为植物来源亚精胺补剂 Primeadine®。她在 30 多岁时确诊狼疮、类风湿关节炎和甲状腺功能减退，后与牛津大学科学家合作发现亚精胺并创立公司。2023 年官网 bio 称 58 岁时自身免疫状况已逆转。她的公开方案围绕亚精胺补剂、发酵食物和碎片化日常活动。
+
+注意：Leslie Kenny 是 Primeadine® 的商业创始人，公开言论与产品销售直接相关。中文短视频中"59 岁生理年龄 21 岁""医生断言只剩 5 年"等说法与官方 bio 有出入。详见 [Leslie Kenny 案例档案](../cases/leslie-kenny.md)。
+
 ## 关键来源
 
 - Schwarz C, et al. [Effects of Spermidine Supplementation on Cognition and Biomarkers](https://pubmed.ncbi.nlm.nih.gov/35616942/), 2022.
@@ -178,6 +184,8 @@ audit_date: 2026-07-20
 - 亚精胺本身与整体植物性饮食效应的区分。
 - 2026 年免疫信号的独立重复与感染等临床结局；
 - 可改变当前判断的确认性在研临床试验。
+
+
 
 
 
