@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   base: process.env.DOCS_BASE ?? "/",
   lang: "zh-CN",
-  title: "研寿策略",
+  title: "研寿笔记",
   description: "本地优先、来源可追溯的长寿研究文档库",
   cleanUrls: process.env.DOCS_DEPLOY !== "1",
   lastUpdated: true,
@@ -287,6 +287,7 @@ export default defineConfig({
     },
   },
 });
+
 
 
 
