@@ -11,6 +11,7 @@
 | 镁 | T2 | [品牌与产品梯队](magnesium-brand-tiers-2026-07-21.md) | 2026-07-21 |
 | 维生素 D3 | T2 | [品牌与产品梯队](vitamin-d3-brand-tiers-2026-07-21.md) | 2026-07-21 |
 | NMN / NR | T3 | [品牌与产品梯队](nmn-nr-brand-tiers-2026-07-21.md) | 2026-07-21 |
+| NAD+ 前体（NR/烟酸/烟酰胺/NADH） | 第三方测评 | [17款澳欧港产品对比（石头哥营养笔记）](nad-supplement-17-review-2025.md) | 2025（视频） |
 | 7 种补剂购买指南 | 各 Tier | [购买与服用实操指南](buying-guide-7-supplements-2026-07-21.md) | 2026-07-21 |
 
 ## 尚未建立产品梯队的品类

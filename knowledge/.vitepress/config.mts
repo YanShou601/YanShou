@@ -133,6 +133,10 @@ export default defineConfig({
             text: "NMN / NR 品牌梯队",
             link: "/products/nmn-nr-brand-tiers-2026-07-21",
           },
+          {
+            text: "NAD+ 17款测评（石头哥）",
+            link: "/products/nad-supplement-17-review-2025",
+          },
         ],
       },
       {
