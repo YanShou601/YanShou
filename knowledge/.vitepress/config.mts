@@ -80,7 +80,6 @@ export default defineConfig({
           { text: "Edson Brandão", link: "/cases/edson-brandao" },
           { text: "Bryan 的一天与一周", link: "/cases/bryan-johnson-daily" },
           { text: "Bryan 当前方案", link: "/sources/bryan-johnson-current-protocol" },
-          { text: "Bryan 41 条长寿建议", link: "/cases/bryan-johnson-41-tips" },
           { text: "Peter Attia 方案", link: "/cases/peter-attia-protocol" },
           { text: "Andrew Huberman 方案", link: "/cases/andrew-huberman-protocol" },
         ],
