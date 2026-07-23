@@ -101,6 +101,7 @@ export default defineConfig({
           { text: "麦角硫因", link: "/dossiers/ergothioneine" },
           { text: "PQQ", link: "/dossiers/pqq" },
           { text: "Ca-AKG", link: "/dossiers/ca-akg" },
+           { text: "GLP-1 受体激动剂", link: "/dossiers/glp1-ra" },
         ],
       },
       {
@@ -292,6 +293,7 @@ export default defineConfig({
     },
   },
 });
+
 
 
 

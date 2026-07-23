@@ -28,5 +28,7 @@ Tier 是研究优先级，不是购物榜。任何页面都必须明确回答“
 | ergothioneine | 麦角硫因 | T4 | [ergothioneine.md](ergothioneine.md) |
 | pqq | PQQ | T4 | [pqq.md](pqq.md) |
 | ca-akg | Ca-AKG | T4 | [ca-akg.md](ca-akg.md) |
+| glp1-ra | GLP-1 受体激动剂（处方药） | T2 | [glp1-ra.md](glp1-ra.md) |
 
 前 7 份档案从网页现有内容迁移而来；维生素 D3、镁和可溶性纤维已完成首轮定向检索。NMN/NR、亚精胺、PQQ 与 Ca-AKG 已完成第二阶段前沿候选评审和 47 项独立审计。所有档案仍需随新试验持续更新。
+
