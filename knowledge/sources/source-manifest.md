@@ -1,6 +1,6 @@
 # 来源与本地快照清单
 
-最后更新：`2026-07-22`
+最后更新：`2026-07-23`
 时区：`Asia/Shanghai`
 
 ## 已归档
@@ -9,6 +9,7 @@
 |---|---|---|---:|---|
 | Bryan 当前官方协议 | https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-protocol | `work/references/bryan-johnson/2026-07-20-current-protocol.html` | 394899 | `b48e334a618cfabb491bcd1626eeefac64af0c45156ccbfa314ba3350611d6fe` |
 | Bryan 旧协议入口 | https://protocol.bryanjohnson.com/ | `work/references/bryan-johnson/2026-07-20-protocol-site.html` | 132157 | `155ef484ff995202a588a4119b10c55938556d7b35ee5f16ce95e89bb37baddc` |
+| Bryan 协议入口（2026-07-23 重抓） | https://protocol.bryanjohnson.com/ | `work/references/bryan-johnson/2026-07-23-protocol-site.html` | 132017 | `f28925a21b37d3c3c0d318c4b1f7e3c2639f7151077b7274dd0457c3ec46f284` |
 | Blueprint 补充剂集合 | https://blueprint.bryanjohnson.com/collections/supplements | `work/references/bryan-johnson/2026-07-20-supplements-collection.json` | 39979 | `656a064fed41e713113fefa967cb2b8b0a90f28f6ba9cacb9d78674fe07ab754` |
 | Blueprint Big Stack | https://blueprint.bryanjohnson.com/products/big-stack | `work/references/bryan-johnson/2026-07-20-big-stack.json` | 20821 | `b3213d514ad75da11ec3d0dadf15daeb47d03ee08d395bf7b935c459fbbee27a` |
 | 现有 13 条 PubMed 记录 | NCBI E-utilities 批量导出 | `work/references/pubmed/2026-07-20-existing-evidence-records.xml` | 305686 | `328f8a80b76b8e1f4f5a6ea03368350d30c48431d31e3a50378e12f606f20d92` |
