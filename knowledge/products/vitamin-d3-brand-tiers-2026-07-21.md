@@ -5,7 +5,7 @@ market: US-and-international-online
 status: reviewed
 evidence_tier: T2
 quality_framework: product-quality-0.1
-last_checked: 2026-07-21
+last_checked: 2026-07-26
 ---
 
 # 维生素 D3：具体品牌与产品梯队
@@ -31,6 +31,7 @@ last_checked: 2026-07-21
 | **Momentous Vitamin D3 2000 IU** | **P1** | D3 2000 IU / 1 粒 | 胶囊 | NSF 目录当前列出（Capsule, 1 capsule） | 价格较高 |
 | **NOW Foods Vitamin D3 2000 IU** | **P2** | D3 2000 IU / 1 粒 | 软胶囊 | GMP 大厂；价格极低（~8 USD / 120 粒） | 没有产品级独立认证 |
 | **NOW Foods Vitamin D3 5000 IU** | **P2** | D3 5000 IU / 1 粒 | 软胶囊 | GMP；高剂量版 | 5000 IU 不适合未经检测者长期使用 |
+| **NOW Foods Vitamin D3 & K2** | **P2** | D3 1000 IU + K2 MK-4 45 μg / 1 粒 | 胶囊 | GMP 大厂；剂量温和，适合未验血者从维持量起步；标签建议随餐 1–2 粒/日 | 没有产品级独立认证；K2 为 MK-4 形式（半衰期短于 MK-7） |
 | **Life Extension Vitamin D3** | **P2** | D3 2000 或 5000 IU / 粒 | 胶囊 | 品牌透明度高 | 本轮未找到产品级独立认证 |
 | **Sports Research Vitamin D3 + K2** | **P2** | D3 5000 IU + K2 MK-7 100 μg | 软胶囊（含椰子油） | 产品标签清楚；含脂肪基底有助吸收 | 5000 IU 偏高；没有产品级独立认证 |
 | **Nordic Naturals Vitamin D3** | **P2** | D3 1000 IU / 粒 | 软胶囊（含橄榄油） | 品牌知名度；含脂肪基底 | 价格偏高；没有产品级独立认证 |
@@ -53,7 +54,7 @@ NSF 官方膳食补充剂认证目录（2026-07-21 核对）中可找到：
 
 ### P2：NOW、Life Extension、Sports Research、Nordic Naturals、Pure Encapsulations
 
-- **NOW Foods**：GMP 大厂，价格极低，但没有产品级独立认证。作为成熟营养素，GMP 级别的质控对 D3 已经足够日常使用；
+- **NOW Foods**：GMP 大厂，价格极低，但没有产品级独立认证。作为成熟营养素，GMP 级别的质控对 D3 已经足够日常使用。其 D3+K2 胶囊（D3 1000 IU + K2 MK-4 45 μg）剂量温和，适合未验血者先按维持量起步；注意 K2 是 MK-4 形式，与市面上多数 D3+K2 产品使用的 MK-7 不同（MK-4 半衰期短，需每日稳定摄入）；
 - **Sports Research**：D3+K2 组合，含椰子油基底有助脂溶性吸收，但 5000 IU 偏高；
 - **Nordic Naturals**：鱼油领域强，D3 不是核心产品线。
 

@@ -5,7 +5,7 @@ market: US-and-international-online
 status: reviewed
 evidence_tier: T1
 quality_framework: product-quality-0.1
-last_checked: 2026-07-21
+last_checked: 2026-07-26
 ---
 
 # 肌酸：具体品牌与产品梯队
@@ -28,7 +28,7 @@ last_checked: 2026-07-21
 |---|---:|---:|---|---|---|
 | **Thorne Creatine**（粉剂） | **P1** | 5 g / 勺 | 肌酸一水合物 | NSF 官方数据库当前列出该具体产品（Powder, 1 scoop 5 g）；成分单一 | 价格较高； flavored 版本含额外成分需单独核对 |
 | **Momentous Creatine Monohydrate**（粉剂） | **P1** | 5 g / 勺 | 肌酸一水合物 | NSF 官方数据库当前列出（Powder, 1 scoop 5 g）；90 份装 | 价格较高；有品牌合作（Huberman）需标注 |
-| **NOW Foods Creatine Monohydrate**（粉剂） | **P2** | 5 g / 勺 | 肌酸一水合物 | GMP 大厂；产品线清楚；价格低 | 没有产品级独立认证或公开批次报告 |
+| **NOW Foods Creatine Monohydrate**（粉剂） | **P2** | 5 g / 勺 | 肌酸一水合物 | GMP 大厂；产品线清楚；价格低；**Sports 线（8 oz/227 g）有 Informed Sport 认证**（2026-07-26 零售商页面核对） | Informed Sport 侧重禁用物质批检，与 NSF 的含量全面验证范围不同 |
 | **Life Extension Creatine**（粉剂） | **P2** | 5 g / 份 | 肌酸一水合物 | 品牌透明度高；成分单一 | 本轮未找到产品级独立认证 |
 | **Optimum Nutrition Micronized Creatine**（粉剂） | **P2** | 3.4 g / 勺 | 微粉化一水合物 | Informed Sport 认证；运动人群知名度高 | 每份含量低于 5 g；Informed Sport 与 NSF 覆盖范围不同 |
 | **BulkSupplements Creatine Monohydrate**（粉剂） | **P3** | 5 g / 份 | 肌酸一水合物 | 价格极低；大包装；有第三方检测声明 | 没有可核对的产品级独立认证；包装简陋 |
@@ -46,7 +46,7 @@ NSF 认证意味着产品经过含量验证、污染物检测和标签审核。�
 
 ### P2：NOW、Life Extension、Optimum Nutrition
 
-- **NOW Foods**：GMP 认证大厂，产品线极广，价格低。但 GMP 说明生产体系，不等于该瓶产品的含量和纯度已得到公开独立验证；
+- **NOW Foods**：GMP 认证大厂，产品线极广，价格低。其 **Sports 线肌酸**（如 iHerb 在售的 8 oz/227 g 装）带 Informed Sport 认证，即逐批检测禁用物质，比纯 GMP 多一层产品级信号；但 Informed Sport 不等于 NSF 式的全项含量与污染物验证，因此仍在 P2；
 - **Life Extension**：品牌透明度较高，但本轮未找到肌酸产品的独立认证；
 - **Optimum Nutrition**：有 Informed Sport 认证（主要检测禁用物质），每份 3.4 g 低于常用 5 g。
 
