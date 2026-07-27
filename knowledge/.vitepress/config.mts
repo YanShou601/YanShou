@@ -47,6 +47,7 @@ export default defineConfig({
         items: [
           { text: "知识库首页", link: "/" },
           { text: "每日方案", link: "/daily-protocol" },
+          { text: "四项前沿补剂计划", link: "/frontier-four-rollout-2026" },
           { text: "饮食记录", link: "/diet-log" },
           { text: "差距分析与行动计划", link: "/gap-analysis" },
           { text: "我的化验记录", link: "/my-lab-results" },

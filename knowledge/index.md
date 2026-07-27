@@ -9,6 +9,7 @@
 | 入口 | 内容 |
 |---|---|
 | [补剂候选总目录](catalog/supplements.md) | 53 项候选、Bryan 状态、评审状态和下一步优先级 |
+| [四项前沿补剂 12 周导入计划](frontier-four-rollout-2026.md) | NR、麦角硫因、亚精胺、Ca-AKG 的品牌、剂量、日期与监测 |
 | [已评审档案](dossiers/index.md) | 当前 12 个完成第一轮评审的补剂 |
 | [NAD⁺ 代谢轴总览](topics/nad-pathway.md) | 为什么重要、真正缺乏、食物、补剂、直接口服与静脉路线 |
 | [人物案例](cases/index.md) | Bryan Johnson、陈传多、吕良伟、Edson Brandão 等公开方案的事实核查与科学边界 |

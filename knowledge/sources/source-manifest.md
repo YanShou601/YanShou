@@ -71,6 +71,7 @@ Wikipedia 快照对应页面 ID `40680056`、修订 ID `1364875906`、修订时�
 | 维生素 D 与自身免疫病 | 2026-07-21 | [VITAL 与免疫证据来源批次](vitamin-d-autoimmune-sources-2026-07-21.md) | 随机试验、停用后随访、Treg 机制、官方剂量与 K2 边界 |
 | Leslie Kenny / Oxford Healthspan 亚精胺案例 | 2026-07-22 | [Leslie Kenny 案例来源批次](leslie-kenny-sources-2026-07-22.md) | 官网 bio Wayback Machine 快照、产品页、中文短视频文案 |
 | 肌酸、镁、维生素 D3、NMN/NR 产品质量 | 2026-07-21 | NSF 认证目录在线核对 | Thorne 和 Momentous 的 NSF 产品级认证；NOW、Doctor's Best 等 GMP/原料级信息 |
+| NR、亚精胺、麦角硫因、Ca-AKG 12 周导入 | 2026-07-27 | [四项前沿补剂导入计划来源批次](frontier-rollout-sources-2026-07-27.md) | 2026 Bryan 官方协议、当前 SKU 标签、两项 2026 人体研究与本地快照 |
 
 ## 已登记但暂未取得原始快照
 
