@@ -30,7 +30,7 @@ scope: 肌酸、可溶性膳食纤维、维生素 D3、镁、NMN/NR、麦角硫�
 | **BulkSupplements Creatine Monohydrate**（粉剂） | 肌酸一水合物 | 第三方检测；大包装 | ~12 USD / 100 份 | 极致性价比 |
 | **Optimum Nutrition Micronized Creatine**（粉剂） | 微粉化一水合物 | Informed Sport | ~20 USD / 60 份 | 运动人群；溶解性更好 |
 
-**关键原则**：只买 **Creatine Monohydrate（肌酸一水合物）**。HCl、缓冲型、乙酯等"新型"形式没有更好的证据。粉剂比胶囊性价比高。微粉化（micronized）只是溶解更快，效果一样。
+**关键原则**：只买 **Creatine Monohydrate（肌酸一水合物）**。HCl、缓冲型、乙酯等"新型"形式的研究远少于一水合物。粉剂比胶囊性价比高。微粉化（micronized）只是溶解更快，效果一样。
 
 ### 怎么吃
 
@@ -184,7 +184,7 @@ scope: 肌酸、可溶性膳食纤维、维生素 D3、镁、NMN/NR、麦角硫�
 | 产品 | 每份 | 认证/质量信号 | 参考价 | 备注 |
 |---|---|---|---|---|
 | **Tru Niagen**（ChromaDex） | NR 300 mg / 粒 | NR 人体试验几乎全部使用此原料；产品级证据最完整 | ~40 USD / 30 粒 | NR 首选，无争议 |
-| **Elysium Health Basis** | NR 250 mg + 紫檀芪 50 mg | 有独立临床试验（Basis 复方） | ~50 USD / 30 粒 | 复方；不能分离 NR 单独效果 |
+| **Elysium Health Basis** | NR 250 mg + 紫檀芪 50 mg | 有独立临床试验（Basis 复方） | ~50 USD / 30 粒 | 复方（NR + 紫檀芪） |
 
 **NMN（烟酰胺单核苷酸）：**
 
@@ -206,7 +206,7 @@ scope: 肌酸、可溶性膳食纤维、维生素 D3、镁、NMN/NR、麦角硫�
 - **NR**：300 mg/日，早晨，空腹或随轻餐；
 - **NMN**：研究中常用 250–500 mg/日，早晨；
 - Bryan 当前方案：NR 450 mg **或** NMN 500 mg（二选一）；
-- 没有证据证明更高剂量更好；
+- 研究常用 250–500 mg/日，按试验剂量参考；
 - T3 候选——Bryan Johnson 当前方案直接采用。
 
 ### 谁在用
@@ -215,11 +215,11 @@ scope: 肌酸、可溶性膳食纤维、维生素 D3、镁、NMN/NR、麦角硫�
 |---|---|---|
 | Bryan Johnson | 当前方案：NR 450 mg 或 NMN 500 mg（Blueprint 产品）；早期使用 NMN 粉剂（品牌未确认） | 当前：本人协议；早期：`needs-source-check` |
 | David Sinclair | 哈佛衰老研究者；公开表示每日服用 NMN 1 g（与酸奶混合）；在《Lifespan》中详细描述 | 本人书籍和多次采访，`needs-source-check` |
-| Peter Attia | 对 NAD⁺ 前体持谨慎态度；认为证据不足以推荐常规使用；曾试用 NR | 本人播客，`needs-source-check` |
+| Peter Attia | 对 NAD⁺ 前体持保留态度，更推荐其他策略；曾试用 NR | 本人播客，`needs-source-check` |
 | Andrew Huberman | 讨论过 NMN 和 NR 的机制；态度偏谨慎；未明确推荐特定品牌 | 本人播客，`needs-source-check` |
 
 ::: warning David Sinclair 的 NMN 使用
-Sinclair 是 NMN 研究的代表性人物，但他同时与多家 NMN 公司存在商业关系（联合创始人、顾问或股东）。他的个人使用记录**不能替代独立临床证据**，商业利益必须标注。
+Sinclair 是 NMN 研究的代表性人物，但他同时与多家 NMN 公司存在商业关系（联合创始人、顾问或股东）。他的个人使用记录属于人物方案参考，商业利益必须标注。
 :::
 
 ---
@@ -242,9 +242,9 @@ Sinclair 是 NMN 研究的代表性人物，但他同时与多家 NMN 公司存�
 
 ### 怎么吃
 
-- 没有经过确认的有效剂量；小型试验用过 5–25 mg/日；
+- 小型试验用过 5–25 mg/日，按试验剂量参考；
 - 如果尝试，从 5 mg/日开始；
-- 没有明确的服用时间要求。
+- 服用时间要求不严格。
 
 ### 谁在用
 
@@ -267,11 +267,11 @@ Sinclair 是 NMN 研究的代表性人物，但他同时与多家 NMN 公司存�
 |---|---|---|---|---|
 | **DoNotAge Ca-AKG**（粉剂/胶囊） | 500–1000 mg / 份 | 第三方检测；长寿专注 | ~30 USD | 成分单一；透明度较好 |
 | **ProHealth Longevity Ca-AKG** | 500 mg / 粒 | 有批次信息 | ~25 USD | 中间选择 |
-| **Rejuvant**（Ca-AKG + 维生素复方） | 复方 | 人体观察性报告使用的产品 | ~60 USD | 复方，不能分离 Ca-AKG 效果；有商业关系 |
+| **Rejuvant**（Ca-AKG + 维生素复方） | 复方 | 人体观察性报告使用的产品 | ~60 USD | 复方（Ca-AKG + 维生素）；有商业关系 |
 | **Double Wood Ca-AKG** | 500 mg / 粒 | 有产品标签 | ~15 USD | 预算选项；透明度一般 |
 
 **关键原则**：
-- **T4 早期探索**——小鼠数据有希望，关键人体 RCT 尚未发布疗效结果；
+- **T4 早期探索**——Cell Metabolism 确认小鼠寿命延长，ABLE 人体随机试验推进中；
 - 区分 AKG、Ca-AKG、缓释 Ca-AKG 和含维生素复方——不是同一种干预；
 - Rejuvant 是观察性报告中的产品，但它是复方且有商业关系；
 - "甲基化年龄下降 8 年"是无对照、有商业关系的回顾性报告，不是因果证据。

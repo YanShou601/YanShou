@@ -85,7 +85,7 @@ Ultimate Omega 当前官网每 2 粒提供总 Omega-3 1280 mg，常见标签为 
 - 芝麻过敏者需要排除；
 - IFOS 证明的是质量控制，不证明一般健康人服用后一定获得心血管或认知收益；
 - **Mega EPA/DHA、Very Finest Fish Oil 和 Super Omega-3 不是同一产品，不能共享等级**；
-- 没有一手资料证明 Bryan Johnson 当前使用这款产品。
+- Bryan Johnson 当前方案使用 Blueprint Omega-3；这款产品不在方案记录中。
 
 ## 为什么 Thorne 也在第一梯队？
 
@@ -141,14 +141,14 @@ P3 表示**透明度不够**，不是检测出它不合格。
 
 因此，正确写法是：
 
-> Bryan 当前公开方案包含 Blueprint Omega-3；这只能确认人物方案，不能证明普通人需要，也不能替 Life Extension、Thorne 或其他产品背书。
+> Bryan 当前公开方案包含 Blueprint Omega-3；人物方案是策略来源，具体品牌按 P 梯队选择。
 
 ## “谁在用”栏目以后怎么记录？
 
 | 状态 | 可以怎样写 |
 |---|---|
 | `current-explicit` | 本人当前带日期协议直接列出完整产品 |
-| `current-brand-only` | 只确认品牌或成分，无法确认 SKU |
+| `current-brand-only` | 只确认品牌或成分，SKU 待核对 |
 | `historical` | 旧协议或旧视频出现，当前状态未知 |
 | `sponsored` | 广告、联盟链接、品牌合作或获赠 |
 | `unverified` | 二手榜单、论坛、转述或没有原始链接 |

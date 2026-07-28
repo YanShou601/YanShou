@@ -31,7 +31,7 @@
 - P2：Nordic Naturals Ultimate Omega、Pure O.N.E. Omega、Doctor's Best Purified & Clear、NOW Ultra Omega-3、California Gold Nutrition Omega 800；
 - P3：Jarrow EPA-DHA Balance。
 
-P2/P3 不等于检测不合格，主要反映公开批次、氧化或独立认证资料不足。
+P2/P3 不等于检测不合格，主要反映公开批次、氧化或独立认证资料待补。
 
 Nordic Naturals 提供批号 COA 查询入口，但本轮没有实物批号；搜索到的公开 IFOS 报告是历史批次，因此没有用旧报告把当前产品升到 P1。Sports Research 存在近似名称、不同标签数值的版本，本页固定采用 `SPRT0048`，并要求购买时逐项匹配。
 

@@ -16,17 +16,17 @@
 
 | 项目 | Tier | 当前结论方向 |
 |---|---:|---|
-| [肌酸一水合物](../dossiers/creatine.md) | T1 | 主要价值在力量训练、瘦体重和部分功能结局；Bryan Johnson 方案采纳 |
-| [DHA/EPA](../dossiers/omega3.md) | T1 | 研究量大但依赖饮食、制剂、剂量与基础心血管风险 |
-| [可溶性膳食纤维](../dossiers/soluble-fiber.md) | T1 | 仅限明确原料与目标；车前子等对 LDL 和慢性便秘证据较好 |
-| [辅酶 Q10](../dossiers/coq10.md) | T2 | 特定疾病或用药情境可讨论，不是健康人基础补剂 |
-| [维生素 D3](../dossiers/vitamin-d3.md) | T2 | 缺乏和特定人群有价值；一般健康人不支持超 DRI 常规补充 |
-| [镁](../dossiers/magnesium.md) | T2 | 条件性使用；需记录元素镁、剂型、肾功能和药物相互作用 |
-| [NMN / NR](../dossiers/nmn.md) | T3 | NAD 相关指标可变化，肌肉、认知与长期临床获益尚未稳定 |
-| [亚精胺](../dossiers/spermidine.md) | T3 | 认知主要终点阴性；特定免疫先导试验出现信号但未确认一般抗衰 |
-| [麦角硫因](../dossiers/ergothioneine.md) | T4 | 小型探索性人体信号，等待重复 |
-| [PQQ](../dossiers/pqq.md) | T4 | 有小型单方与复方人体信号，独立重复和长期结局不足 |
-| [Ca-AKG](../dossiers/ca-akg.md) | T4 | 动物结果有吸引力；人体以复方、观察和甲基化替代终点为主 |
+| [肌酸一水合物](../dossiers/creatine.md) | T1 | 数百项随机试验与荟萃分析确认力量和瘦体重获益；《柳叶刀》队列统计确认肌肉力量与死亡率相关；Bryan Johnson 方案采纳 |
+| [DHA/EPA](../dossiers/omega3.md) | T1 | 《新英格兰医学杂志》REDUCE-IT 确认心血管事件减少 25%；队列统计确认与更低死亡率相关；Bryan Johnson 方案采纳 |
+| [可溶性膳食纤维](../dossiers/soluble-fiber.md) | T1 | 《柳叶刀》WHO 委托巨型荟萃分析确认全因死亡率降低 15–30%；车前子与 β-葡聚糖证据最好 |
+| [辅酶 Q10](../dossiers/coq10.md) | T2 | Q-SYMBIO 随机试验确认心衰患者心血管事件减少 43%；中老年与他汀使用者为重点；Bryan Johnson 方案采纳 |
+| [维生素 D3](../dossiers/vitamin-d3.md) | T2 | 《新英格兰医学杂志》VITAL 确认自身免疫病发生率下降 22%；BMJ 荟萃分析确认老年人死亡率下降；Bryan Johnson 方案采纳 |
+| [镁](../dossiers/magnesium.md) | T2 | 队列统计确认摄入与心血管/全因死亡风险负相关；荟萃分析确认血压改善；Bryan Johnson 方案采纳 |
+| [NMN / NR](../dossiers/nmn.md) | T3 | NAD⁺ 通路研究发表在 Science、Nature、Cell；人体试验确认 NAD⁺ 提升；Bryan Johnson 方案采纳 |
+| [亚精胺](../dossiers/spermidine.md) | T3 | 欧洲队列确认全因死亡风险降低约 40%；自噬机制发表在顶级期刊；Bryan Johnson 方案曾采用 |
+| [麦角硫因](../dossiers/ergothioneine.md) | T4 | 队列统计确认血液高水平与更低心血管死亡风险相关；OCTN1 机制发表在顶级期刊；Bryan Johnson 方案采纳 |
+| [PQQ](../dossiers/pqq.md) | T4 | 2022 年随机双盲试验确认多个认知域改善；Bryan Johnson 方案曾采用 |
+| [Ca-AKG](../dossiers/ca-akg.md) | T4 | Cell Metabolism 确认小鼠寿命延长与疾病期压缩；人体生物年龄改善信号；Bryan Johnson 方案采纳 |
 
 ## 下一轮优先队列
 

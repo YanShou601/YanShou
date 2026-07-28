@@ -83,7 +83,7 @@ rg -n "<中文名>|<英文名>|<别名>" knowledge
 
 ## 8. 给出 Tier
 
-依据 `methods/evidence-grading.md`。如证据不足，保持 `pending`，不要为了填满榜单强行定级。
+依据 `methods/evidence-grading.md`。未完成评审的项目保持 `pending`，不要为了填满榜单强行定级。
 
 Tier 与审计状态分开记录：Tier 描述证据位置，审计状态描述档案完整性。
 
